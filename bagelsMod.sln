@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bagelsMod", "bagelsMod.csproj", "{82E68891-F8E6-4229-8B1A-65DBBADB5504}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		ExportDebug|Any CPU = ExportDebug|Any CPU
+		ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82E68891-F8E6-4229-8B1A-65DBBADB5504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E68891-F8E6-4229-8B1A-65DBBADB5504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82E68891-F8E6-4229-8B1A-65DBBADB5504}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{82E68891-F8E6-4229-8B1A-65DBBADB5504}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{82E68891-F8E6-4229-8B1A-65DBBADB5504}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{82E68891-F8E6-4229-8B1A-65DBBADB5504}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

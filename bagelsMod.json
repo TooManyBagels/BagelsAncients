@@ -1,0 +1,14 @@
+﻿{
+  "id": "bagelsMod",
+  "name": "Act2Ancient",
+  "author": "TooManyBagels",
+  "description": "Slay the Spire 2 content mod which adds an Act 2 ancient",
+  "version": "v0.0.0",
+  "min_game_version": "0.107.0",
+  "has_pck": true,
+  "has_dll": true,
+  "dependencies": [
+    {"id": "BaseLib", "min_version": "3.4.0"}
+  ],
+  "affects_gameplay": true
+}
