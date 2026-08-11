@@ -61,6 +61,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Folder Include="bagelsModCode\Ancients\" />
         <Folder Include="bagelsMod\images\card_portraits\big\"/>
         <Folder Include="bagelsMod\images\powers\big\"/>
         <Folder Include="bagelsMod\images\relics\big\"/>

@@ -1,3 +1,8 @@
 {
-  
+  "BAGELSMOD-SIMPLE_RUNE.title": "Simple Rune", 
+  "BAGELSMOD-SIMPLE_RUNE.description": "Upon pickup, [gold]Upgrade[/gold] all your basic [gold]Strikes[/gold] and [gold]Defends[/gold].",
+  "BAGELSMOD-SIMPLE_RUNE.flavor": "The truth is always simple.",
+  "BAGELSMOD-HUNTERS_BLADE.title": "Hunter's Blade",
+  "BAGELSMOD-HUNTERS_BLADE.description": "At the start of combat, gain [blue]4[/blue] [gold]strength[/gold], [blue]4[/blue] [gold]dexterity[/gold], and [red]Tender[/red].",
+  "BAGELSMOD-HUNTERS_BLADE.flavor": "Crafted using the shell of a mighty bug. Wears easily then repairs itself."
 }

@@ -10,7 +10,7 @@ namespace bagelsMod.bagelsModCode.Relics;
 /// This will generate a class that extends this one.
 /// You can also just create the class manually; just make sure to inherit from this class.
 /// </summary>
-public abstract class bagelsModRelic : CustomRelicModel
+public abstract class BagelsModRelic : CustomRelicModel
 {
     //bagelsMod/images/relics
     public override string PackedIconPath => $"{Id.Entry.RemovePrefix().ToLowerInvariant()}.png".RelicImagePath();
