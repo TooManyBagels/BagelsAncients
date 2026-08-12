@@ -4,5 +4,8 @@
   "BAGELSMOD-SIMPLE_RUNE.flavor": "The truth is always simple.",
   "BAGELSMOD-HUNTERS_BLADE.title": "Hunter's Blade",
   "BAGELSMOD-HUNTERS_BLADE.description": "At the start of combat, gain [blue]4[/blue] [gold]strength[/gold], [blue]4[/blue] [gold]dexterity[/gold], and [red]Tender[/red].",
-  "BAGELSMOD-HUNTERS_BLADE.flavor": "Crafted using the shell of a mighty bug. Wears easily then repairs itself."
+  "BAGELSMOD-HUNTERS_BLADE.flavor": "Crafted using the shell of a mighty bug. Wears easily then repairs itself.",
+  "BAGELSMOD-INKLET_SHAWL.title": "Inklet Shawl",
+  "BAGELSMOD-INKLET_SHAWL.description": "At the start of combat, gain [blue]1[/blue] [gold]Slippery[/gold]. At the start of your turn, if you have [gold]Slippery[/gold], gain {Energy:energyIcons()}.",
+  "BAGELSMOD-INKLET_SHAWL.flavor": "Comfortable and fashionable, although wearers eventually find it consumes them."
 }

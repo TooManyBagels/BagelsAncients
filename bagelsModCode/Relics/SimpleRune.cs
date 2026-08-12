@@ -1,8 +1,4 @@
-﻿using bagelsMod.bagelsModCode.Extensions;
-using bagelsMod.bagelsModCode.Relics;
-using BaseLib.Extensions;
-using BaseLib.Utils;
-using Godot;
+﻿using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Relics;
