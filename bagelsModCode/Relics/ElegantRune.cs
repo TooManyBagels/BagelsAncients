@@ -26,13 +26,14 @@ public class ElegantRune() : BagelsModRelic
         int i;
         for (i = 0; i < 2; ++i)
         {
-            CardModel card = this.Owner.RunState.Rng.Niche.NextItem<CardModel>(PileType.Deck.GetPile(this.Owner).Cards.Where<CardModel>((Func<CardModel, bool>) (c => !c.IsUpgradable)));
-            if (card != null)
+            var card = this.Owner.RunState.Rng.Niche.NextItem<CardModel>(PileType.Deck.GetPile(this.Owner).Cards.Where<CardModel>((Func<CardModel, bool>) (c => !c.IsUpgradable)));
+            if (card == null)
             {
-                CardCmd.Downgrade(card);
-                CardCmd.Preview(card, style: CardPreviewStyle.MessyLayout);
-                await Cmd.CustomScaledWait(0.3f, 0.5f);
+                break;
             }
+            CardCmd.Downgrade(card);
+            CardCmd.Preview(card, style: CardPreviewStyle.MessyLayout);
+            await Cmd.CustomScaledWait(0.3f, 0.5f);
         }
     }
 }

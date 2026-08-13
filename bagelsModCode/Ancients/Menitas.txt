@@ -1,0 +1,22 @@
+﻿using bagelsMod.bagelsModCode.Relics;
+using BaseLib.Abstracts;
+using BaseLib.Extensions;
+using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Models;
+
+namespace bagelsMod.bagelsModCode.Ancients;
+
+public class Menitas() : CustomAncientModel
+{
+    public override bool IsValidForAct(ActModel act) => act.ActNumber() == 2;
+    
+    protected override OptionPools MakeOptionPools => new(
+        MakePool(AncientOption<SimpleRune>()),
+        MakePool(AncientOption<HuntersBlade>(), AncientOption<ToadpoleArmor>(), AncientOption<ElegantRune>()),
+        MakePool(AncientOption<BitingBrace>(), AncientOption<InkletShawl>())
+    );
+    
+    //public override string CustomScenePath => "res://bagelsMod/images/ancients/menitas_scene.tscn";
+    //public override string CustomMapIconPath => "res://bagelsMod/images/ancients/menitas.jpg";
+    //public override string CustomMapIconOutlinePath => "res://bagelsMod/images/ancients/menitas_map_outline.jpg";
+}

@@ -20,14 +20,14 @@ public class ToadpoleArmor() : BagelsModRelic
 
     public override async Task AfterRoomEntered(AbstractRoom room)
     {
-        if (!(room is CombatRoom))
+        if (room is not CombatRoom)
             return;
         this.Flash();
-        ThornsPower thornsPower = await PowerCmd.Apply<ThornsPower>(
+        await PowerCmd.Apply<ThornsPower>(
             (PlayerChoiceContext)new ThrowingPlayerChoiceContext(), this.Owner.Creature,
-            this.DynamicVars["ThornsPower"].BaseValue, this.Owner.Creature, (CardModel)null);
-        PlatingPower platingPower = await PowerCmd.Apply<PlatingPower>(
+            this.DynamicVars["ThornsPower"].BaseValue, this.Owner.Creature, null);
+        await PowerCmd.Apply<PlatingPower>(
             (PlayerChoiceContext)new ThrowingPlayerChoiceContext(), this.Owner.Creature,
-            this.DynamicVars["PlatingPower"].BaseValue, this.Owner.Creature, (CardModel)null);
+            this.DynamicVars["PlatingPower"].BaseValue, this.Owner.Creature, null);
     }
 }

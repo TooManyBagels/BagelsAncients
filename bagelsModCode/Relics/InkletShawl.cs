@@ -26,7 +26,7 @@ public class InkletShawl() : BagelsModRelic
             return;
         }
         this.Flash();
-        SlipperyPower slipperyPower = await PowerCmd.Apply<SlipperyPower>((PlayerChoiceContext) new ThrowingPlayerChoiceContext(), this.Owner.Creature, 1, this.Owner.Creature, (CardModel) null);
+        await PowerCmd.Apply<SlipperyPower>((PlayerChoiceContext) new ThrowingPlayerChoiceContext(), this.Owner.Creature, 1, this.Owner.Creature,null);
     }
 
     public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
