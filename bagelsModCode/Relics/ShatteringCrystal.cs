@@ -2,6 +2,7 @@
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
@@ -17,6 +18,13 @@ public class ShatteringCrystal() : BagelsModRelic
         RelicRarity.Ancient;
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3)];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        ..HoverTipFactory.FromEnchantment<Fragile>(),
+        HoverTipFactory.Static(StaticHoverTip.Energy),
+        HoverTipFactory.FromKeyword(CardKeyword.Exhaust)
+    ];
+
     
     public override bool HasUponPickupEffect => true;
     

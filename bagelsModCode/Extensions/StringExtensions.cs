@@ -68,4 +68,12 @@ public static class StringExtensions
     {
         return Path.Join(MainFile.ResPath, "images", "charui", path);
     }
+
+    public static string EnchantmentImagePath(this string path)
+    {
+        path = Path.Join(MainFile.ResPath, "images", "enchantments", path);
+        if (ResourceLoader.Exists(path)) return path;
+        MainFile.Logger.Info("Could not find big relic image path: " + path);
+        return Path.Join(MainFile.ResPath, "images", "enchantments", "placeholder.jpg", path);
+    }
 }
