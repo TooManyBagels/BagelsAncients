@@ -3,6 +3,7 @@ using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Relics;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
@@ -32,7 +33,5 @@ public class ShatteringCrystal() : BagelsModRelic
             CardCmd.Enchant(canonicalEnchantment.ToMutable(), card, 1);
             CardCmd.Preview(card);
         }
-
-        canonicalEnchantment = null;
     }
 }

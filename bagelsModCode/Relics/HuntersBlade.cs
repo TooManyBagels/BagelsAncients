@@ -20,6 +20,12 @@ public class HuntersBlade() : BagelsModRelic
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<DexterityPower>(4), new PowerVar<StrengthPower>(4)];
 
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromPower<TenderPower>(),
+        HoverTipFactory.FromPower<StrengthPower>(),
+        HoverTipFactory.FromPower<DexterityPower>()
+    ];
+
     public override async Task AfterRoomEntered(AbstractRoom room)
     {
         if (!(room is CombatRoom))

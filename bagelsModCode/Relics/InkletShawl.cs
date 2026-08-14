@@ -3,6 +3,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
@@ -18,6 +19,11 @@ public class InkletShawl() : BagelsModRelic
         RelicRarity.Ancient;
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(1)];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromPower<SlipperyPower>(),
+        HoverTipFactory.Static(StaticHoverTip.Energy)
+    ];
 
     public override async Task AfterRoomEntered(AbstractRoom room)
     {

@@ -9,7 +9,7 @@ public class Fragile() : EnchantmentModel
 
     public override bool CanEnchant(CardModel card)
     {
-        return base.CanEnchant(card) && !card.GetKeywordsWithSources(KeywordSources.Local).Contains(CardKeyword.Exhaust);
+        return base.CanEnchant(card) && !card.GetKeywordsWithSources(KeywordSources.Local).Contains(CardKeyword.Exhaust) && card.EnergyCost.Canonical > 0;
     }
     
     protected override void OnEnchant()

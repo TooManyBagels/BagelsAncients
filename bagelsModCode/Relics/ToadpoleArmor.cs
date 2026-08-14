@@ -2,6 +2,7 @@
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
@@ -18,6 +19,12 @@ public class ToadpoleArmor() : BagelsModRelic
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<ThornsPower>(5), new PowerVar<PlatingPower>(5)];
 
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        HoverTipFactory.FromPower<PlatingPower>(),
+        HoverTipFactory.FromPower<ThornsPower>(),
+        HoverTipFactory.Static(StaticHoverTip.Block)
+    ];
+    
     public override async Task AfterRoomEntered(AbstractRoom room)
     {
         if (room is not CombatRoom)
