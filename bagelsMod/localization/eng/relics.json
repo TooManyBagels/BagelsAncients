@@ -16,5 +16,8 @@
   "BAGELSMOD-TOADPOLE_ARMOR.flavor": "The shell of a Sewer Clam melded with the spikes of a Toadpole. Grows to fit its wearer.",
   "BAGELSMOD-BITING_BRACE.title": "Biting Brace",
   "BAGELSMOD-BITING_BRACE.description": "At the start of your turn, gain {Energy:energyIcons()}. Whenever you take unblocked attack damage, lose 2 [gold]Max HP[/gold].",
-  "BAGELSMOD-BITING_BRACE.flavor": "With pain comes power."
+  "BAGELSMOD-BITING_BRACE.flavor": "With pain comes power.",
+  "BAGELSMOD-SHATTERING_CRYSTAL.title": "Shattering Crystal",
+  "BAGELSMOD-SHATTERING_CRYSTAL.description": "Upon pickup, enchant up to 3 [gold]Attacks[/gold] or [gold]skills[/gold] with [gold]Fragile[/gold].",
+  "BAGELSMOD-SHATTERING_CRYSTAL.flavor": "Perpetually locked in a state of almost breaking."
 }
