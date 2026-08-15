@@ -18,7 +18,7 @@ public class Fragile() : CustomEnchantmentModel
     
     protected override void OnEnchant()
     {
-        this.Card.AddKeyword(CardKeyword.Exhaust);
+        Card.AddKeyword(CardKeyword.Exhaust);
         Card.EnergyCost.UpgradeBy(-1);
     }
 }

@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 
 namespace bagelsMod.bagelsModCode.Relics;
 
-[Pool(typeof(SharedRelicPool))]
+[Pool(typeof(EventRelicPool))]
 public class ShatteringCrystal : BagelsModRelic
 {
     public override RelicRarity Rarity =>

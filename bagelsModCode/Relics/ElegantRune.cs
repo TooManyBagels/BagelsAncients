@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Nodes.CommonUi;
 
 namespace bagelsMod.bagelsModCode.Relics;
 
-[Pool(typeof(SharedRelicPool))]
+[Pool(typeof(EventRelicPool))]
 public class ElegantRune : BagelsModRelic
 {
     public override RelicRarity Rarity =>

@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace bagelsMod.bagelsModCode.Relics;
 
-[Pool(typeof(SharedRelicPool))]
+[Pool(typeof(EventRelicPool))]
 public class BitingBrace : BagelsModRelic
 {
     public override RelicRarity Rarity =>

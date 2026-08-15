@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 
 namespace bagelsMod.bagelsModCode.Relics;
 
-[Pool(typeof(SharedRelicPool))]
+[Pool(typeof(EventRelicPool))]
 public class SimpleRune() : BagelsModRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;

@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.Rooms;
 
 namespace bagelsMod.bagelsModCode.Relics;
 
-[Pool(typeof(SharedRelicPool))]
+[Pool(typeof(EventRelicPool))]
 public class HuntersBlade : BagelsModRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;

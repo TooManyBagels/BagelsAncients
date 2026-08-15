@@ -21,9 +21,12 @@
   "BAGELSMOD-SHATTERING_CRYSTAL.description": "Upon pickup, [gold]Enchant[/gold] up to 3 [gold]Attacks[/gold] or [gold]Skills[/gold] with [gold]Fragile[/gold].",
   "BAGELSMOD-SHATTERING_CRYSTAL.flavor": "Perpetually locked in a state of almost breaking.",
   "BAGELSMOD-WRITHING_TONGS.title": "Writhing Tongs",
-  "BAGELSMOD-WRITHING_TONGS.description": "Upon pickup, add an [gold]Improvise[/gold] to your deck.",
+  "BAGELSMOD-WRITHING_TONGS.description": "Upon pickup, add [blue]1[/blue] [gold]Improvise[/gold] to your [gold]Deck[/gold].",
   "BAGELSMOD-WRITHING_TONGS.flavor": "These cursed tongs shift in your hand, but they seem at peace.",
   "BAGELSMOD-BLESSED_CAULDRON.title": "Blessed Cauldron",
   "BAGELSMOD-BLESSED_CAULDRON.description": "[gold]Elites[/gold] drop a [gold]Moment of Clarity[/gold] upon defeat.",
-  "BAGELSMOD-BLESSED_CAULDRON.flavor": "Saps the lifeforce of deadly creatures and synthesizes it into pure bliss."
+  "BAGELSMOD-BLESSED_CAULDRON.flavor": "Saps the lifeforce of deadly creatures and synthesizes it into pure bliss.",
+  "BAGELSMOD-DRAGON_EGG.title": "Dragon Egg",
+  "BAGELSMOD-DRAGON_EGG.description": "[gold]Upgrade[/gold] all your card rewards. You can no longer skip card rewards.",
+  "BAGELSMOD-DRAGON_EGG.flavor": "These have not been seen in aeons. Perhaps this is the last one."
 }

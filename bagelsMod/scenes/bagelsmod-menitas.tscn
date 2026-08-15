@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://7lxduvtdv7t5"]
+
+[ext_resource type="Texture2D" uid="uid://cbpab1826nu3u" path="res://bagelsMod/images/ancients/default-image-missing-placeholder-free-vector.jpg" id="1_1700b"]
+
+[node name="menitas" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1930.0
+offset_bottom = 1082.0
+texture = ExtResource("1_1700b")

@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Rooms;
 
 namespace bagelsMod.bagelsModCode.Relics;
 
-[Pool(typeof(SharedRelicPool))]
+[Pool(typeof(EventRelicPool))]
 public class InkletShawl : BagelsModRelic
 {
     public override RelicRarity Rarity =>
