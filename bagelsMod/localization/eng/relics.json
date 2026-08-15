@@ -9,7 +9,7 @@
   "BAGELSMOD-INKLET_SHAWL.description": "At the start of combat, gain [blue]1[/blue] [gold]Slippery[/gold]. At the start of your turn, if you have [gold]Slippery[/gold], gain {Energy:energyIcons()}.",
   "BAGELSMOD-INKLET_SHAWL.flavor": "Comfortable and fashionable, although wearers eventually find it consumes them.",
   "BAGELSMOD-ELEGANT_RUNE.title": "Elegant Rune",
-  "BAGELSMOD-ELEGANT_RUNE.description": "Upon pickup, remove [blue]3[/blue] cards and downgrade [blue]2[/blue] random cards.",
+  "BAGELSMOD-ELEGANT_RUNE.description": "Upon pickup, remove [blue]3[/blue] cards from your [gold]Deck[/gold] and [red]Downgrade[/red] [blue]2[/blue] random cards.",
   "BAGELSMOD-ELEGANT_RUNE.flavor": "The answer was elegance. Of course.",
   "BAGELSMOD-TOADPOLE_ARMOR.title": "Toadpole Armor",
   "BAGELSMOD-TOADPOLE_ARMOR.description": "At the start of combat, gain [blue]5[/blue] [gold]Plating[/gold] and [gold]Thorns[/gold].",
@@ -27,6 +27,6 @@
   "BAGELSMOD-BLESSED_CAULDRON.description": "[gold]Elites[/gold] drop a [gold]Moment of Clarity[/gold] upon defeat.",
   "BAGELSMOD-BLESSED_CAULDRON.flavor": "Saps the lifeforce of deadly creatures and synthesizes it into pure bliss.",
   "BAGELSMOD-DRAGON_EGG.title": "Dragon Egg",
-  "BAGELSMOD-DRAGON_EGG.description": "[gold]Upgrade[/gold] all your card rewards. You can no longer skip card rewards.",
+  "BAGELSMOD-DRAGON_EGG.description": "[gold]Upgrade[/gold] all your card rewards. You can no longer [gold]Skip[/gold] card rewards.",
   "BAGELSMOD-DRAGON_EGG.flavor": "These have not been seen in aeons. Perhaps this is the last one."
 }

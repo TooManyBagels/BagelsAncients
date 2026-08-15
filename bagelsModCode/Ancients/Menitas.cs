@@ -3,7 +3,6 @@ using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Relics;
 
 namespace bagelsMod.bagelsModCode.Ancients;
 
@@ -19,7 +18,8 @@ public class Menitas : CustomAncientModel
         [
             AncientOption<SimpleRune>(),
             AncientOption<WrithingTongs>(),
-            AncientOption<BlessedCauldron>()
+            AncientOption<BlessedCauldron>(),
+            AncientOption<DragonEgg>()
         ],
         [
             AncientOption<HuntersBlade>(),
