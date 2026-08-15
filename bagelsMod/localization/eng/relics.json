@@ -19,5 +19,8 @@
   "BAGELSMOD-BITING_BRACE.flavor": "With pain comes power.",
   "BAGELSMOD-SHATTERING_CRYSTAL.title": "Shattering Crystal",
   "BAGELSMOD-SHATTERING_CRYSTAL.description": "Upon pickup, [gold]Enchant[/gold] up to 3 [gold]Attacks[/gold] or [gold]Skills[/gold] with [gold]Fragile[/gold].",
-  "BAGELSMOD-SHATTERING_CRYSTAL.flavor": "Perpetually locked in a state of almost breaking."
+  "BAGELSMOD-SHATTERING_CRYSTAL.flavor": "Perpetually locked in a state of almost breaking.",
+  "BAGELSMOD-WRITHING_TONGS.title": "Writhing Tongs",
+  "BAGELSMOD-WRITHING_TONGS.description": "Upon pickup, add an [gold]Improvise[/gold] to your deck.",
+  "BAGELSMOD-WRITHING_TONGS.flavor": "These cursed tongs shift in your hand, but they seem at peace."
 }
