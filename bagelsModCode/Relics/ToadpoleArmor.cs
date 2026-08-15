@@ -4,7 +4,6 @@ using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Rooms;
@@ -12,7 +11,7 @@ using MegaCrit.Sts2.Core.Rooms;
 namespace bagelsMod.bagelsModCode.Relics;
 
 [Pool(typeof(SharedRelicPool))]
-public class ToadpoleArmor() : BagelsModRelic
+public class ToadpoleArmor : BagelsModRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
@@ -31,10 +30,10 @@ public class ToadpoleArmor() : BagelsModRelic
             return;
         this.Flash();
         await PowerCmd.Apply<ThornsPower>(
-            (PlayerChoiceContext)new ThrowingPlayerChoiceContext(), this.Owner.Creature,
+            new ThrowingPlayerChoiceContext(), this.Owner.Creature,
             this.DynamicVars["ThornsPower"].BaseValue, this.Owner.Creature, null);
         await PowerCmd.Apply<PlatingPower>(
-            (PlayerChoiceContext)new ThrowingPlayerChoiceContext(), this.Owner.Creature,
+            new ThrowingPlayerChoiceContext(), this.Owner.Creature,
             this.DynamicVars["PlatingPower"].BaseValue, this.Owner.Creature, null);
     }
 }

@@ -16,7 +16,7 @@ public class SimpleRune() : BagelsModRelic
 
     public override Task AfterObtained()
     {
-        foreach (var card in (IEnumerable<CardModel>)PileType.Deck.GetPile(this.Owner).Cards.ToList<CardModel>())
+        foreach (var card in PileType.Deck.GetPile(this.Owner).Cards.ToList<CardModel>())
         {
             if (card.Rarity == CardRarity.Basic && (card.Tags.Contains<CardTag>(CardTag.Strike) || card.Tags.Contains<CardTag>(CardTag.Defend)))
             {

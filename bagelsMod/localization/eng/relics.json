@@ -22,5 +22,8 @@
   "BAGELSMOD-SHATTERING_CRYSTAL.flavor": "Perpetually locked in a state of almost breaking.",
   "BAGELSMOD-WRITHING_TONGS.title": "Writhing Tongs",
   "BAGELSMOD-WRITHING_TONGS.description": "Upon pickup, add an [gold]Improvise[/gold] to your deck.",
-  "BAGELSMOD-WRITHING_TONGS.flavor": "These cursed tongs shift in your hand, but they seem at peace."
+  "BAGELSMOD-WRITHING_TONGS.flavor": "These cursed tongs shift in your hand, but they seem at peace.",
+  "BAGELSMOD-BLESSED_CAULDRON.title": "Blessed Cauldron",
+  "BAGELSMOD-BLESSED_CAULDRON.description": "[gold]Elites[/gold] drop a [gold]Moment of Clarity[/gold] upon defeat.",
+  "BAGELSMOD-BLESSED_CAULDRON.flavor": "Saps the lifeforce of deadly creatures and synthesizes it into pure bliss."
 }

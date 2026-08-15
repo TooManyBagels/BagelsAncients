@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace bagelsMod.bagelsModCode.Relics;
 
 [Pool(typeof(SharedRelicPool))]
-public class ShatteringCrystal() : BagelsModRelic
+public class ShatteringCrystal : BagelsModRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
@@ -36,7 +36,7 @@ public class ShatteringCrystal() : BagelsModRelic
             RequireManualConfirmation = true
         };
         var canonicalEnchantment = ModelDb.Enchantment<Fragile>();
-        foreach (var card in await CardSelectCmd.FromDeckForEnchantment(this.Owner, (EnchantmentModel) canonicalEnchantment, 3, prefs))
+        foreach (var card in await CardSelectCmd.FromDeckForEnchantment(this.Owner, canonicalEnchantment, 3, prefs))
         {
             CardCmd.Enchant(canonicalEnchantment.ToMutable(), card, 1);
             CardCmd.Preview(card);

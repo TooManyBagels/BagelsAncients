@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace bagelsMod.bagelsModCode.Relics;
 
 [Pool(typeof(SharedRelicPool))]
-public class WrithingTongs() : BagelsModRelic
+public class WrithingTongs : BagelsModRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
