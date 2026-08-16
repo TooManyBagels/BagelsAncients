@@ -15,7 +15,7 @@
   "BAGELSMOD-TOADPOLE_ARMOR.description": "At the start of combat, gain [blue]5[/blue] [gold]Plating[/gold] and [gold]Thorns[/gold].",
   "BAGELSMOD-TOADPOLE_ARMOR.flavor": "The shell of a Sewer Clam melded with the spikes of a Toadpole. Grows to fit its wearer.",
   "BAGELSMOD-BITING_BRACE.title": "Biting Brace",
-  "BAGELSMOD-BITING_BRACE.description": "At the start of your turn, gain {Energy:energyIcons()}. Whenever you take unblocked attack damage, lose 2 [gold]Max HP[/gold].",
+  "BAGELSMOD-BITING_BRACE.description": "At the start of your turn, gain {Energy:energyIcons()}. Whenever you take unblocked attack damage, lose [blue]2[/blue] Max HP.",
   "BAGELSMOD-BITING_BRACE.flavor": "With pain comes power.",
   "BAGELSMOD-SHATTERING_CRYSTAL.title": "Shattering Crystal",
   "BAGELSMOD-SHATTERING_CRYSTAL.description": "Upon pickup, [gold]Enchant[/gold] up to 3 [gold]Attacks[/gold] or [gold]Skills[/gold] with [gold]Fragile[/gold].",
@@ -28,5 +28,12 @@
   "BAGELSMOD-BLESSED_CAULDRON.flavor": "Saps the lifeforce of deadly creatures and synthesizes it into pure bliss.",
   "BAGELSMOD-DRAGON_EGG.title": "Dragon Egg",
   "BAGELSMOD-DRAGON_EGG.description": "[gold]Upgrade[/gold] all your card rewards. You can no longer [gold]Skip[/gold] card rewards.",
-  "BAGELSMOD-DRAGON_EGG.flavor": "These have not been seen in aeons. Perhaps this is the last one."
+  "BAGELSMOD-DRAGON_EGG.flavor": "These have not been seen in aeons. Perhaps this is the last one.",
+  
+  "BAGELSMOD-BLIGHTED_MUSHROOM.title": "Blighted Mushroom",
+  "BAGELSMOD-BLIGHTED_MUSHROOM.description": "Upon pickup, raise your Max HP by [blue]66[/blue] and lose [blue]66[/blue] HP.",
+  "BAGELSMOD-BLIGHTED_MUSHROOM.flavor": "The blight festering within this mushroom has made it more potent.",
+  "BAGELSMOD-DOUBLE_PENDULUM.title": "Double Pendulum",
+  "BAGELSMOD-DOUBLE_PENDULUM.description": "Every [blue]2[/blue] turns, draw [blue]3[/blue] cards. On other turns, draw [blue]1[/blue] less card.",
+  "BAGELSMOD-DOUBLE_PENDULUM.flavor": "A toy for those who've lived a thousand lifetimes."
 }
