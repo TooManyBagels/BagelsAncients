@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Relics;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
@@ -21,6 +22,11 @@ public class BloodDiamond() : BagelsModRelic
         RelicRarity.Ancient;
 
     public override bool HasUponPickupEffect => true;
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [
+        ..HoverTipFactory.FromEnchantment<BloodPact>(),
+        HoverTipFactory.Static(StaticHoverTip.Energy),
+    ];
     
     public override async Task AfterObtained()
     {
