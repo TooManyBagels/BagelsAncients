@@ -18,7 +18,10 @@ public class Karyei : CustomAncientModel
             AncientOption<BlightedMushroom>(),
             AncientOption<DoublePendulum>(),
             AncientOption<MechanicalButterfly>(),
-            AncientOption<SensoryStone>()
+            AncientOption<SensoryStone>(),
+            AncientOption<VolatileCrystal>(),
+            AncientOption<ImbalancedScales>(),
+            AncientOption<EntrappedEntropy>()
         ]
     );
     

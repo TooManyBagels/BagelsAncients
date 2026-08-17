@@ -47,5 +47,8 @@
   "BAGELSMOD-IMBALANCED_SCALES.flavor": "No matter what is put on it, it never levels out.",
   "BAGELSMOD-VOLATILE_CRYSTAL.title": "Volatile Crystal",
   "BAGELSMOD-VOLATILE_CRYSTAL.description": "Upon pickup, gain [blue]3[/blue] random [gold]Relics[/gold], remove [blue]3[/blue] random cards from your [gold]Deck[/gold], and [gold]Upgrade[/gold] [blue]3[/blue] random cards.",
-  "BAGELSMOD-VOLATILE_CRYSTAL.flavor": "The legends say it ruptured the ground it was lodged in, creating the seas."
+  "BAGELSMOD-VOLATILE_CRYSTAL.flavor": "The legends say it ruptured the ground it was lodged in, creating the seas.",
+  "BAGELSMOD-ENTRAPPED_ENTROPY.title": "Entrapped Entropy",
+  "BAGELSMOD-ENTRAPPED_ENTROPY.description": "Upon pickup, fill your potion slots with [gold]Entropic Brews[/gold]. Whenever you use a potion, transform your hand.",
+  "BAGELSMOD-ENTRAPPED_ENTROPY.flavor": "It constantly shifts, trying to figure some way to break out of its cage."
 }
