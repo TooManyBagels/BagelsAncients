@@ -44,5 +44,8 @@
   "BAGELSMOD-SENSORY_STONE.flavor": "It illicts memories of the past upon touch.",
   "BAGELSMOD-IMBALANCED_SCALES.title": "Imbalanced Scales",
   "BAGELSMOD-IMBALANCED_SCALES.description": "Upon pickup, add an [gold]All Out[/gold] to your [gold]Deck[/gold].",
-  "BAGELSMOD-IMBALANCED_SCALES.flavor": "No matter what is put on it, it never levels out."
+  "BAGELSMOD-IMBALANCED_SCALES.flavor": "No matter what is put on it, it never levels out.",
+  "BAGELSMOD-VOLATILE_CRYSTAL.title": "Volatile Crystal",
+  "BAGELSMOD-VOLATILE_CRYSTAL.description": "Upon pickup, gain [blue]3[/blue] random [gold]Relics[/gold], remove [blue]3[/blue] random cards from your [gold]Deck[/gold], and [gold]Upgrade[/gold] [blue]3[/blue] random cards.",
+  "BAGELSMOD-VOLATILE_CRYSTAL.flavor": "The legends say it ruptured the ground it was lodged in, creating the seas."
 }

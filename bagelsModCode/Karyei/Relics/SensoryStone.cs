@@ -22,7 +22,7 @@ public class SensoryStone : BagelsModRelic
     public override async Task AfterObtained()
     {
         var rewards = new List<Reward>();
-        var rewardCount = this.DynamicVars["RewardCount"].IntValue;
+        var rewardCount = DynamicVars["RewardCount"].IntValue;
         for (var i = 0; i < rewardCount; ++i)
         {
             var options = CardCreationOptions.ForNonCombatWithDefaultOdds([ModelDb.CardPool<ColorlessCardPool>()])
