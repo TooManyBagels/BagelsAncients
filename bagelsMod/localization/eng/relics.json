@@ -35,5 +35,14 @@
   "BAGELSMOD-BLIGHTED_MUSHROOM.flavor": "The blight festering within this mushroom has made it more potent.",
   "BAGELSMOD-DOUBLE_PENDULUM.title": "Double Pendulum",
   "BAGELSMOD-DOUBLE_PENDULUM.description": "Every [blue]2[/blue] turns, draw [blue]3[/blue] cards. On other turns, draw [blue]1[/blue] less card.",
-  "BAGELSMOD-DOUBLE_PENDULUM.flavor": "A toy for those who've lived a thousand lifetimes."
+  "BAGELSMOD-DOUBLE_PENDULUM.flavor": "A toy for those who've lived a thousand lifetimes.",
+  "BAGELSMOD-MECHANICAL_BUTTERFLY.title": "Mechanical Butterfly",
+  "BAGELSMOD-MECHANICAL_BUTTERFLY.description": "At the start of your turn, EVERYONE gains [blue]10[/blue] [gold]Block[/gold].",
+  "BAGELSMOD-MECHANICAL_BUTTERFLY.flavor": "Once alive, delicately preserved through slow replacement of parts with gears.",
+  "BAGELSMOD-SENSORY_STONE.title": "Sensory Stone",
+  "BAGELSMOD-SENSORY_STONE.description": "Upon pickup, obtain [blue]3[/blue] Upgraded Colorless Card Rewards.",
+  "BAGELSMOD-SENSORY_STONE.flavor": "It illicts memories of the past upon touch.",
+  "BAGELSMOD-IMBALANCED_SCALES.title": "Imbalanced Scales",
+  "BAGELSMOD-IMBALANCED_SCALES.description": "Upon pickup, add an [gold]All Out[/gold] to your [gold]Deck[/gold].",
+  "BAGELSMOD-IMBALANCED_SCALES.flavor": "No matter what is put on it, it never levels out."
 }

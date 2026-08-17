@@ -3,7 +3,6 @@ using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Relics;
 
 namespace bagelsMod.bagelsModCode.Karyei.Ancients;
 
@@ -17,8 +16,9 @@ public class Karyei : CustomAncientModel
     protected override OptionPools MakeOptionPools => new OptionPools(
         [
             AncientOption<BlightedMushroom>(),
-            AncientOption<Vajra>(),
-            AncientOption<OddlySmoothStone>()
+            AncientOption<DoublePendulum>(),
+            AncientOption<MechanicalButterfly>(),
+            AncientOption<SensoryStone>()
         ]
     );
     
