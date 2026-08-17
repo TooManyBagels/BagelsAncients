@@ -10,7 +10,7 @@ public class Karyei : CustomAncientModel
 {
     public override bool IsValidForAct(ActModel act)
     {
-        return act.ActNumber() == 2;
+        return act.ActNumber() == 3;
     }
 
     protected override OptionPools MakeOptionPools => new OptionPools(
@@ -21,7 +21,8 @@ public class Karyei : CustomAncientModel
             AncientOption<SensoryStone>(),
             AncientOption<VolatileCrystal>(),
             AncientOption<ImbalancedScales>(),
-            AncientOption<EntrappedEntropy>()
+            AncientOption<EntrappedEntropy>(),
+            AncientOption<TiltAWhirl>()
         ]
     );
     

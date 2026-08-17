@@ -32,7 +32,7 @@ public class MechanicalButterfly : BagelsModRelic
         if (!participants.Contains(Owner.Creature))
             return;
         Flash();
-        foreach (var c in participants)await CreatureCmd.GainBlock(c, DynamicVars.Block, null);
+        foreach (var c in participants) await CreatureCmd.GainBlock(c, DynamicVars.Block, null);
         foreach (var c in combatState.Enemies) await CreatureCmd.GainBlock(c, DynamicVars.Block, null);
     }
 }
