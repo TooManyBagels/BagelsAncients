@@ -22,7 +22,9 @@ public class Karyei : CustomAncientModel
             AncientOption<VolatileCrystal>(),
             AncientOption<ImbalancedScales>(),
             AncientOption<EntrappedEntropy>(),
-            AncientOption<TiltAWhirl>()
+            AncientOption<TiltAWhirl>(),
+            AncientOption<MatryoshkaDoll>(),
+            AncientOption<BloodDiamond>()
         ]
     );
     
