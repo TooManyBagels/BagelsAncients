@@ -5,7 +5,6 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.Models.Powers;
 
@@ -27,7 +26,7 @@ public class AllOut() : bagelsModCard(0,
         CardPlay play)
     {
         await PlayerCmd.GainEnergy(DynamicVars.Energy.IntValue, Owner);
-        await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.BaseValue, Owner);
+        await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.IntValue, Owner);
         await PowerCmd.Apply<NoBlockPower>(choiceContext, Owner.Creature, DynamicVars["Turns"].BaseValue, Owner.Creature, this);
     }
 
