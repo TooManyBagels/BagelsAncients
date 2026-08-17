@@ -1,4 +1,4 @@
-﻿using bagelsMod.bagelsModCode.Cards;
+﻿using bagelsMod.bagelsModCode.Menitas.Cards;
 using bagelsMod.bagelsModCode.Relics;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;

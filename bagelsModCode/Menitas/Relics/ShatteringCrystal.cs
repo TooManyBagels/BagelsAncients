@@ -37,7 +37,7 @@ public class ShatteringCrystal : BagelsModRelic
             RequireManualConfirmation = true
         };
         var canonicalEnchantment = ModelDb.Enchantment<Fragile>();
-        foreach (var card in await CardSelectCmd.FromDeckForEnchantment(this.Owner, canonicalEnchantment, 3, prefs))
+        foreach (var card in await CardSelectCmd.FromDeckForEnchantment(Owner, canonicalEnchantment, 1, prefs))
         {
             CardCmd.Enchant(canonicalEnchantment.ToMutable(), card, 1);
             CardCmd.Preview(card);

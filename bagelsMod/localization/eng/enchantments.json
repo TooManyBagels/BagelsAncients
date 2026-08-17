@@ -1,4 +1,8 @@
 ﻿{
   "BAGELSMOD-FRAGILE.title": "Fragile",
-  "BAGELSMOD-FRAGILE.description": "Reduce cost by {Energy:energyIcons()}. Add [gold]Exhaust[/gold]."
+  "BAGELSMOD-FRAGILE.description": "Reduce cost by {Energy:energyIcons()}. Add [gold]Exhaust[/gold].",
+  
+  "BAGELSMOD-BLOOD_PACT.title": "Blood Pact",
+  "BAGELSMOD-BLOOD_PACT.description": "Reduce cost to 0{Energy:energyIcons()}. Lose 2 HP for each {Energy:energyIcons()} this cost.",
+  "BAGELSMOD-BLOOD_PACT.extraCardText": "Lose [red]{HpLoss:diff()}[/red] HP."
 }

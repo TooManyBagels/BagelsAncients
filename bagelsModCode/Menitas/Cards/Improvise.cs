@@ -5,10 +5,9 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 
-namespace bagelsMod.bagelsModCode.Cards;
+namespace bagelsMod.bagelsModCode.Menitas.Cards;
 
 [Pool(typeof(EventCardPool))]
 public class Improvise() : bagelsModCard(0,
@@ -21,9 +20,9 @@ public class Improvise() : bagelsModCard(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        var cardsToAdd = PileType.Draw.GetPile(this.Owner).Cards
-            .Where<CardModel>((Func<CardModel, bool>)(c => c.IsUpgradable)).ToList<CardModel>()
-            .StableShuffle<CardModel>(this.Owner.RunState.Rng.CombatCardSelection).Take<CardModel>(this.DynamicVars.Cards.IntValue);
+        var cardsToAdd = PileType.Draw.GetPile(Owner).Cards
+            .Where((c => c.IsUpgradable)).ToList()
+            .StableShuffle(Owner.RunState.Rng.CombatCardSelection).Take(DynamicVars.Cards.IntValue);
         foreach(var card in cardsToAdd)
         {
             await CardPileCmd.Add(card, PileType.Hand);
