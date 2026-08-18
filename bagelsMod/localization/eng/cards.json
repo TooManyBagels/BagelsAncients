@@ -1,6 +1,6 @@
 {
   "BAGELSMOD-IMPROVISE.title": "Improvise",
-  "BAGELSMOD-IMPROVISE.description": "Add {Cards:diff()} [gold]Unupgraded[/gold] cards from your [gold]Draw Pile[/gold] into your [gold]Hand[/gold]. [gold]Upgrade[/gold] them.",
+  "BAGELSMOD-IMPROVISE.description": "Add {Cards:diff()} random [gold]Unupgraded[/gold] cards from your [gold]Draw Pile[/gold] into your [gold]Hand[/gold]. [gold]Upgrade[/gold] them.",
   "BAGELSMOD-SLIP.title": "Slip",
   "BAGELSMOD-SLIP.description": "Gain [blue]1[/blue] [gold]Slippery[/gold].",
   

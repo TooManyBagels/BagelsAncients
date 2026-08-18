@@ -49,7 +49,7 @@
   "BAGELSMOD-VOLATILE_CRYSTAL.description": "Upon pickup, gain [blue]3[/blue] random [gold]Relics[/gold], remove [blue]3[/blue] random cards from your [gold]Deck[/gold], and [gold]Upgrade[/gold] [blue]3[/blue] random cards.",
   "BAGELSMOD-VOLATILE_CRYSTAL.flavor": "The legends say it ruptured the ground it was lodged in, creating the seas.",
   "BAGELSMOD-ENTRAPPED_ENTROPY.title": "Entrapped Entropy",
-  "BAGELSMOD-ENTRAPPED_ENTROPY.description": "Upon pickup, fill your potion slots with [gold]Entropic Brews[/gold]. Whenever you use a potion, transform your [gold]Hand[/gold].",
+  "BAGELSMOD-ENTRAPPED_ENTROPY.description": "Upon pickup, fill your empty potion slots with [gold]Entropic Brews[/gold]. Using a potion transforms your [gold]Hand[/gold].",
   "BAGELSMOD-ENTRAPPED_ENTROPY.flavor": "It constantly shifts, trying to figure some way to break out of its cage.",
   "BAGELSMOD-TILT_A_WHIRL.title": "Tilt-a-Whirl",
   "BAGELSMOD-TILT_A_WHIRL.description": "At the end of each turn, play a random card from your [gold]Hand[/gold], then [gold]Exhaust[/gold] a random card from your [gold]Hand[/gold].",
