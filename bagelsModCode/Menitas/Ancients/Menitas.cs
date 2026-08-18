@@ -23,7 +23,7 @@ public class Menitas : CustomAncientModel
         ],
         [
             AncientOption<HuntersBlade>(),
-            AncientOption<ToadpoleArmor>(),
+            AncientOption<PhantasmalArmor>(),
             AncientOption<ElegantRune>()
         ],
         [

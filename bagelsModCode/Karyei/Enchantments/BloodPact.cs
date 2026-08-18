@@ -21,7 +21,7 @@ public class BloodPact() : CustomEnchantmentModel
     
     protected override void OnEnchant()
     {
-        DynamicVars.HpLoss.BaseValue = Card.EnergyCost.Canonical * 2;
+        DynamicVars.HpLoss.BaseValue = Card.EnergyCost.Canonical;
         Card.EnergyCost.UpgradeBy(-Card.EnergyCost.Canonical);
     }
     
