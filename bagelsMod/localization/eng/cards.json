@@ -7,5 +7,5 @@
   "BAGELSMOD-ALL_OUT.title": "All Out",
   "BAGELSMOD-ALL_OUT.description": "Gain {Energy:energyIcons()}.\nDraw {Cards:diff()} cards.\nYou can no longer gain [gold]Block[/gold] from cards.",
   "BAGELSMOD-OBSESSION.title": "Obsession",
-  "BAGELSMOD-OBSESSION.description": "If [gold]Exhausted[/gold] or in your [gold]Hand[/gold] at the end of your turn, add an [red]Obsession[/red] to your [gold]Draw Pile[/gold]."
+  "BAGELSMOD-OBSESSION.description": "When drawn, add an [red]Obsession[/red] to your [gold]Draw Pile[/gold]."
 }

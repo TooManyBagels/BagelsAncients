@@ -1,6 +1,7 @@
 ﻿using bagelsMod.bagelsModCode.Relics;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
@@ -22,14 +23,16 @@ public class SensoryStone : BagelsModRelic
     public override async Task AfterObtained()
     {
         var rewards = new List<Reward>();
-        var rewardCount = DynamicVars["RewardCount"].IntValue;
-        for (var i = 0; i < rewardCount; ++i)
+        var cardRarityArray = new CardRarity[3]
         {
-            var options = CardCreationOptions.ForNonCombatWithDefaultOdds([ModelDb.CardPool<ColorlessCardPool>()])
-                .WithFlags(CardCreationFlags.NoRarityModification | CardCreationFlags.NoCardPoolModifications);
-
+            CardRarity.Uncommon,
+            CardRarity.Uncommon,
+            CardRarity.Rare
+        };
+        foreach (var cardRarity in cardRarityArray)
+        {
+            var options = CardCreationOptions.ForNonCombatWithUniformOdds([ModelDb.CardPool<ColorlessCardPool>()], (c => c.Rarity == cardRarity)).WithFlags(CardCreationFlags.NoRarityModification | CardCreationFlags.NoCardPoolModifications);
             var reward = new CardReward(options, 3, Owner);
-
             reward.AfterGenerated += () =>
             {
                 foreach (var card in reward.Cards)
