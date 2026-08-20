@@ -50,6 +50,7 @@
         <EmbeddedResource Remove="materials/**"/>
         <EmbeddedResource Remove="shaders/**"/>
         <EmbeddedResource Remove="images/**"/>
+        <Compile Remove="bagelsModCode\Phthalo\Ancients\Phthalo.cs" />
     </ItemGroup>
 
     <ItemGroup>
@@ -62,6 +63,7 @@
 
     <ItemGroup>
         <Folder Include="bagelsModCode\Menitas\" />
+        <Folder Include="bagelsModCode\Phthalo\Ancients\" />
         <Folder Include="bagelsMod\images\card_portraits\big\"/>
         <Folder Include="bagelsMod\images\powers\big\"/>
         <Folder Include="bagelsMod\images\relics\big\"/>

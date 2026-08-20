@@ -19,8 +19,8 @@ public class BitingBrace : BagelsModRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
-
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(1)];
+    
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(1), new MaxHpVar(2)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
         HoverTipFactory.Static(StaticHoverTip.Energy)
@@ -42,6 +42,6 @@ public class BitingBrace : BagelsModRelic
         if (!CombatManager.Instance.IsInProgress || target != this.Owner.Creature || result.UnblockedDamage <= 0)
             return;
         this.Flash();
-        await CreatureCmd.LoseMaxHp(choiceContext, this.Owner.Creature, 2, false);
+        await CreatureCmd.LoseMaxHp(choiceContext, this.Owner.Creature, DynamicVars.MaxHp.IntValue, false);
     }
 }
