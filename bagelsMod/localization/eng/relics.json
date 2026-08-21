@@ -59,5 +59,15 @@
   "BAGELSMOD-MATRYOSHKA_DOLL.flavor": "From your point of view, the dolls inside look just as big as the one outside.",
   "BAGELSMOD-BLOOD_DIAMOND.title": "Blood Diamond",
   "BAGELSMOD-BLOOD_DIAMOND.description": "Upon pickup, [gold]Enchant[/gold] up to [purple]{Cards:diff()}[/purple] cards with [gold]Blood Pact[/gold].",
-  "BAGELSMOD-BLOOD_DIAMOND.flavor": "The blood of arrogant adventurers, crystallized."
+  "BAGELSMOD-BLOOD_DIAMOND.flavor": "The blood of arrogant adventurers, crystallized.",
+  
+  "BAGELSMOD-SHAMBLING_VINES.title": "Shambling Vines",
+  "BAGELSMOD-SHAMBLING_VINES.description": "At the start of combat, obtain [blue]{ThornsPower}[/blue] [gold]Thorns[/gold] and [blue]{PlatingPower}[/blue] [gold]Plating[/gold].",
+  "BAGELSMOD-SHAMBLING_VINES.flavor": "Despite being sealed away for a thousand years, these vines writhe as if they had never frozen.",
+  "BAGELSMOD-MYSTERIOUS_FRUIT.title": "Mysterious Fruit",
+  "BAGELSMOD-MYSTERIOUS_FRUIT.description": "Upon pickup, gain [blue]{Gold:diff()}[/blue] [gold]Gold[/gold] and [blue]{MaxHp:diff()}[/blue] Max HP.",
+  "BAGELSMOD-MYSTERIOUS_FRUIT.flavor": "What is it?",
+  "BAGELSMOD-ENCASING_EMBER.title": "Encasing Ember",
+  "BAGELSMOD-ENCASING_EMBER.description": "Upon pickup, choose [blue]1[/blue] of [blue]3[/blue] [gold]Ancient Quest Cards[/gold] to add to your [gold]Deck[/gold].",
+  "BAGELSMOD-ENCASING_EMBER.flavor": "An emblem from a long forgotten past, sealed away by Nature's wrath."
 }

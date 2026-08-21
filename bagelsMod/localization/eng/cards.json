@@ -7,5 +7,12 @@
   "BAGELSMOD-ALL_OUT.title": "All Out",
   "BAGELSMOD-ALL_OUT.description": "Gain {Energy:energyIcons()}.\nDraw {Cards:diff()} cards.\nYou can no longer gain [gold]Block[/gold] from cards.",
   "BAGELSMOD-OBSESSION.title": "Obsession",
-  "BAGELSMOD-OBSESSION.description": "If [gold]Exhausted[/gold] or in your [gold]Hand[/gold] at the end of your turn, add an [red]Obsession[/red] to your [gold]Draw Pile[/gold]."
+  "BAGELSMOD-OBSESSION.description": "If [gold]Exhausted[/gold] or in your [gold]Hand[/gold] at the end of your turn, add an [red]Obsession[/red] to your [gold]Draw Pile[/gold].",
+  
+  "BAGELSMOD-PRESERVED_VINES.title": "Preserved Vines",
+  "BAGELSMOD-PRESERVED_VINES.description": "Can be dissolved at [gold]Rest Sites[/gold].\nStrengthen vines by [blue]{ThornsIncrement}[/blue] [gold]Thorns[/gold] and [blue]{PlatingIncrement}[/blue] [gold]Plating[/gold].\n(Currently [blue]{ThornsPower}[/blue] [gold]Thorns[/gold] and [blue]{PlatingPower}[/blue] [gold]Plating[/gold])",
+  "BAGELSMOD-MYSTERIOUS_SEED.title": "Mysterious Seed",
+  "BAGELSMOD-MYSTERIOUS_SEED.description": "Can be grown by defeating an [gold]Elite[/gold].\nNurture fruit by [blue]{GoldIncrement}[/blue] [gold]Gold[/gold] and [blue]{MaxHpIncrement}[/blue] Max HP.\n(Currently [blue]{Gold:diff()}[/blue] [gold]Gold[/gold] and [blue]{MaxHp:diff()}[/blue] Max HP)",
+  "BAGELSMOD-ENDLESS_TROVE.title": "Endless Trove",
+  "BAGELSMOD-ENDLESS_TROVE.description": "Can be [gold]Removed[/gold] to obtain a [gold]Relic[/gold] for each time this has been played this run.\n(Currently {Relics} [gold]Relics[/gold])"
 }
