@@ -1,4 +1,4 @@
-﻿using bagelsMod.bagelsModCode.Cards;
+﻿using bagelsMod.bagelsModCode.Templates;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Rewards;
 namespace bagelsMod.bagelsModCode.Phthalo.Cards;
 
 [Pool(typeof(EventCardPool))]
-public class EndlessTrove() : bagelsModCard(2,
+public class EndlessTrove() : BagelsModCard(2,
     CardType.Quest, CardRarity.Quest,
     TargetType.Self)
 {

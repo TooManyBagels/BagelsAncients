@@ -1,4 +1,6 @@
 ﻿{
   "BAGELSMOD-OPTION_DISSOLVE.title": "Dissolve",
-  "BAGELSMOD-OPTION_DISSOLVE.description": "Melt [gold]Preserved Vines[/gold] into [gold]Vines[/gold]."
+  "BAGELSMOD-OPTION_DISSOLVE.description": "Melt [gold]Preserved Vines[/gold] into [gold]Vines[/gold].",
+  "BAGELSMOD-OPTION_ROAST.title": "Roast",
+  "BAGELSMOD-OPTION_ROAST.description": "The effect of [gold]Roasted Chestnuts[/gold] last [blue]1[/blue] turn longer."
 }

@@ -1,4 +1,4 @@
-﻿using bagelsMod.bagelsModCode.Cards;
+﻿using bagelsMod.bagelsModCode.Templates;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace bagelsMod.bagelsModCode.Karyei.Cards;
 
 [Pool(typeof(CurseCardPool))]
-public class Obsession() : bagelsModCard(-1,
+public class Obsession() : BagelsModCard(-1,
     CardType.Curse, CardRarity.Curse,
     TargetType.None)
 {

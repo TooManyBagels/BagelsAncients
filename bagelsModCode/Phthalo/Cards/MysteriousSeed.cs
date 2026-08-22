@@ -1,4 +1,4 @@
-﻿using bagelsMod.bagelsModCode.Cards;
+﻿using bagelsMod.bagelsModCode.Templates;
 using bagelsMod.bagelsModCode.Phthalo.Relics;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 namespace bagelsMod.bagelsModCode.Phthalo.Cards;
 
 [Pool(typeof(EventCardPool))]
-public class MysteriousSeed() : bagelsModCard(1,
+public class MysteriousSeed() : BagelsModCard(1,
     CardType.Quest, CardRarity.Quest,
     TargetType.Self)
 {

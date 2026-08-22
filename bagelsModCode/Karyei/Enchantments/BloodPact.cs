@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace bagelsMod.bagelsModCode.Karyei.Enchantments;
 
-public class BloodPact() : CustomEnchantmentModel
+public class BloodPact : CustomEnchantmentModel
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(1), new HpLossVar(0)];
 

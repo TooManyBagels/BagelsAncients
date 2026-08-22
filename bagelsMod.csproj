@@ -62,6 +62,7 @@
 
     <ItemGroup>
         <Folder Include="bagelsModCode\Menitas\" />
+        <Folder Include="bagelsModCode\Phthalo\CardRewardAlternatives\" />
         <Folder Include="bagelsMod\images\card_portraits\big\"/>
         <Folder Include="bagelsMod\images\powers\big\"/>
         <Folder Include="bagelsMod\images\relics\big\"/>

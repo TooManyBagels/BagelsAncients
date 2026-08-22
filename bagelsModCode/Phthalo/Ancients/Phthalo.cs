@@ -3,7 +3,6 @@ using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Relics;
 
 namespace bagelsMod.bagelsModCode.Phthalo.Ancients;
 
@@ -14,11 +13,22 @@ public class Phthalo : CustomAncientModel
         return act.ActNumber() == 3;
     }
 
-    protected override OptionPools MakeOptionPools => new OptionPools(
+    protected override OptionPools MakeOptionPools => new (
         [
+            AncientOption<BuriedStash>(),
+            AncientOption<RoastedChestnuts>(),
+            AncientOption<CircletOfLife>(),
+        ],
+        [
+            AncientOption<OakHeart>(),
+            AncientOption<BuzzingHive>(),
+            AncientOption<SedativeSap>()
+        ],
+        [
+            AncientOption<PhialOfYouth>(),
             AncientOption<EncasingEmber>(),
-            AncientOption<OddlySmoothStone>(),
-            AncientOption<DataDisk>(),
+            AncientOption<HoneyPot>(),
+            AncientOption<AxolotlTail>()
         ]
     );
     

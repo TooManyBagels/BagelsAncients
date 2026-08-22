@@ -1,5 +1,5 @@
 ﻿using bagelsMod.bagelsModCode.Phthalo.Cards;
-using bagelsMod.bagelsModCode.Relics;
+using bagelsMod.bagelsModCode.Templates;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Relics;

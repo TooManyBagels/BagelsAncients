@@ -1,4 +1,4 @@
-﻿using bagelsMod.bagelsModCode.Cards;
+﻿using bagelsMod.bagelsModCode.Templates;
 using bagelsMod.bagelsModCode.Phthalo.RestSiteOptions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 namespace bagelsMod.bagelsModCode.Phthalo.Cards;
 
 [Pool(typeof(EventCardPool))]
-public class PreservedVines() : bagelsModCard(1,
+public class PreservedVines() : BagelsModCard(1,
     CardType.Quest, CardRarity.Quest,
     TargetType.Self)
 {
