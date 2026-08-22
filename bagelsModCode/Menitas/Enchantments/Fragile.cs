@@ -3,9 +3,9 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 
-namespace bagelsMod.bagelsModCode.Enchantments;
+namespace bagelsMod.bagelsModCode.Menitas.Enchantments;
 
-public class Fragile() : CustomEnchantmentModel
+public class Fragile : CustomEnchantmentModel
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(1)];
 

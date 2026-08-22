@@ -1,5 +1,5 @@
-﻿using bagelsMod.bagelsModCode.Enchantments;
-using bagelsMod.bagelsModCode.Relics;
+﻿using bagelsMod.bagelsModCode.Menitas.Enchantments;
+using bagelsMod.bagelsModCode.Templates;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;

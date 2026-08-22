@@ -62,9 +62,20 @@
 
     <ItemGroup>
         <Folder Include="bagelsModCode\Menitas\" />
+        <Folder Include="bagelsModCode\Phthalo\CardRewardAlternatives\" />
         <Folder Include="bagelsMod\images\card_portraits\big\"/>
         <Folder Include="bagelsMod\images\powers\big\"/>
         <Folder Include="bagelsMod\images\relics\big\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include=".gitattributes" />
+      <Content Include="bagelsModCode\MainFile.cs.uid" />
+      <Content Include="bin\ExportRelease\net9.0\publish\bagelsMod.deps.json" />
+      <Content Include="bin\ExportRelease\net9.0\publish\bagelsMod.dll" />
+      <Content Include="bin\ExportRelease\net9.0\publish\bagelsMod.pdb" />
+      <Content Include="bin\ExportRelease\net9.0\publish\GodotSharp.dll" />
+      <Content Include="bin\ExportRelease\net9.0\publish\GodotSharpEditor.dll" />
     </ItemGroup>
 
     <Target Name="CheckDependencyPaths">

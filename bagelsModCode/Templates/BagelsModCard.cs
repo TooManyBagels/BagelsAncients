@@ -3,7 +3,7 @@ using BaseLib.Extensions;
 using bagelsMod.bagelsModCode.Extensions;
 using MegaCrit.Sts2.Core.Entities.Cards;
 
-namespace bagelsMod.bagelsModCode.Cards;
+namespace bagelsMod.bagelsModCode.Templates;
 
 /// <summary>
 /// This is the base class for your mod's cards, which is set up to load the card's images from your mod's resources.
@@ -11,7 +11,7 @@ namespace bagelsMod.bagelsModCode.Cards;
 /// This will generate a class that extends this one.
 /// You can also just create the class manually; just make sure to inherit from this class.
 /// </summary>
-public abstract class bagelsModCard(int cost, CardType type, CardRarity rarity, TargetType target) :
+public abstract class BagelsModCard(int cost, CardType type, CardRarity rarity, TargetType target) :
     CustomCardModel(cost, type, rarity, target)
 {
     //Image size:

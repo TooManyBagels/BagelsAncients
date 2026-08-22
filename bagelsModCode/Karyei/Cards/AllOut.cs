@@ -1,4 +1,4 @@
-﻿using bagelsMod.bagelsModCode.Cards;
+﻿using bagelsMod.bagelsModCode.Templates;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace bagelsMod.bagelsModCode.Karyei.Cards;
 
 [Pool(typeof(EventCardPool))]
-public class AllOut() : bagelsModCard(0,
+public class AllOut() : BagelsModCard(0,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {

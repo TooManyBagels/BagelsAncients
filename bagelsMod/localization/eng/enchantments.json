@@ -4,5 +4,8 @@
   
   "BAGELSMOD-BLOOD_PACT.title": "Blood Pact",
   "BAGELSMOD-BLOOD_PACT.description": "Reduce cost to 0{Energy:energyIcons()}. Lose 1 HP for each {Energy:energyIcons()} this cost.",
-  "BAGELSMOD-BLOOD_PACT.extraCardText": "Lose [red]{HpLoss:diff()}[/red] HP."
+  "BAGELSMOD-BLOOD_PACT.extraCardText": "Lose [red]{HpLoss:diff()}[/red] HP.",
+  
+  "BAGELSMOD-HIVE.title": "Hive",
+  "BAGELSMOD-HIVE.description": "When drawn, add all [gold]Hive[/gold] cards in your [gold]Draw Pile[/gold] to your [gold]Hand[/gold]."
 }

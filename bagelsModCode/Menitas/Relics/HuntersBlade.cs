@@ -1,4 +1,4 @@
-﻿using bagelsMod.bagelsModCode.Relics;
+﻿using bagelsMod.bagelsModCode.Templates;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Relics;
@@ -26,7 +26,7 @@ public class HuntersBlade : BagelsModRelic
 
     public override async Task AfterRoomEntered(AbstractRoom room)
     {
-        if (!(room is CombatRoom))
+        if (room is not CombatRoom)
             return;
         this.Flash();
         await PowerCmd.Apply<StrengthPower>(new ThrowingPlayerChoiceContext(), this.Owner.Creature, this.DynamicVars.Strength.BaseValue, this.Owner.Creature, null);
