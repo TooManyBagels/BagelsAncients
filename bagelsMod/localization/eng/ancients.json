@@ -8,5 +8,10 @@
   "BAGELSMOD-KARYEI.title": "Karyei",
   "BAGELSMOD-KARYEI.epithet": "Unknowable Chaos",
   "BAGELSMOD-KARYEI.talk.firstVisitEver.0-0.ancient": "???",
-  "BAGELSMOD-KARYEI.talk.ANY.0-0r.ancient": "???"
+  "BAGELSMOD-KARYEI.talk.ANY.0-0r.ancient": "???",
+
+  "BAGELSMOD-PHTHALO.title": "Phthalo",
+  "BAGELSMOD-PHTHALO.epithet": "Lifegiver",
+  "BAGELSMOD-PHTHALO.talk.firstVisitEver.0-0.ancient": "???",
+  "BAGELSMOD-PHTHALO.talk.ANY.0-0r.ancient": "???"
 }
