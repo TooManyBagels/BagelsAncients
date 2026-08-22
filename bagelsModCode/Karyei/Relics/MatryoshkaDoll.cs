@@ -33,7 +33,7 @@ public class MatryoshkaDoll : BagelsModRelic
     {
         var rewardsTemp = new List<Reward>(rewards);
 
-        if (player != Owner || room == null || room.RoomType == RoomType.Boss && player.RunState.CurrentActIndex >= player.RunState.Acts.Count - 1)
+        if (player != Owner || room == null || !room.RoomType.IsCombatRoom() ||room.RoomType == RoomType.Boss && player.RunState.CurrentActIndex >= player.RunState.Acts.Count - 1)
             return false;
         foreach (var reward in rewardsTemp)
         {

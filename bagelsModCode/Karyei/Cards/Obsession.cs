@@ -21,19 +21,14 @@ public class Obsession() : BagelsModCard(-1,
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Eternal, CardKeyword.Unplayable];
     
     public override bool HasTurnEndInHandEffect => true;
-
-    protected override async Task OnTurnEndInHand(PlayerChoiceContext choiceContext)
-    {
-        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(CreateClone(), PileType.Draw, Owner), 2.2f);
-    }
     
-    public override async Task AfterCardExhausted(
+    public override async Task AfterCardDrawn(
         PlayerChoiceContext choiceContext,
         CardModel card,
-        bool causedByEthereal)
+        bool fromHandDraw)
     {
-        if (card != this || CombatState == null)
+        if (card != this)
             return;
-        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(CreateClone(), PileType.Draw, Owner), 2.2f);
+        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(CreateClone(), PileType.Draw, Owner));
     }
 }

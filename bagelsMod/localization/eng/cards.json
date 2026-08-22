@@ -15,4 +15,5 @@
   "BAGELSMOD-MYSTERIOUS_SEED.description": "Can be grown by defeating an [gold]Elite[/gold].\nNurture fruit by [blue]{GoldIncrement}[/blue] [gold]Gold[/gold] and [blue]{MaxHpIncrement}[/blue] Max HP.\n(Currently [blue]{Gold:diff()}[/blue] [gold]Gold[/gold] and [blue]{MaxHp:diff()}[/blue] Max HP)",
   "BAGELSMOD-ENDLESS_TROVE.title": "Endless Trove",
   "BAGELSMOD-ENDLESS_TROVE.description": "Can be [gold]Removed[/gold] to obtain a [gold]Relic[/gold] for each time this has been played this run.\n(Currently {Relics} [gold]Relics[/gold])"
+  "BAGELSMOD-OBSESSION.description": "When drawn, add an [red]Obsession[/red] to your [gold]Draw Pile[/gold]."
 }
