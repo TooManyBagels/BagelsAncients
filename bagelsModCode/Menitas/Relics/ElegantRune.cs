@@ -26,7 +26,7 @@ public class ElegantRune : BagelsModRelic
         int i;
         for (i = 0; i < 2; ++i)
         {
-            var card = this.Owner.RunState.Rng.Niche.NextItem(PileType.Deck.GetPile(this.Owner).Cards.Where(c => !c.IsUpgradable));
+            var card = Owner.RunState.Rng.Niche.NextItem(PileType.Deck.GetPile(Owner).Cards.Where(c => c.IsUpgraded));
             if (card == null)
             {
                 break;

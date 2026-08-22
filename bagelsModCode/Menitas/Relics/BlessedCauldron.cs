@@ -20,7 +20,7 @@ public class BlessedCauldron : BagelsModRelic
     
     public override bool TryModifyRewards(Player player, List<Reward> rewards, AbstractRoom? room)
     {
-        if (player != this.Owner || room?.RoomType != RoomType.Elite)
+        if (player != Owner || room?.RoomType != RoomType.Elite)
             return false;
         rewards.Add(new PotionReward(ModelDb.Potion<MomentOfClarity>().ToMutable(), player));
         return true;

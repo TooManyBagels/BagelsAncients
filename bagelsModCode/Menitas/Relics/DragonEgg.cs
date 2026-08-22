@@ -22,7 +22,7 @@ public class DragonEgg : BagelsModRelic
         CardReward cardReward,
         List<CardRewardAlternative> alternatives)
     {    
-        if (this.Owner != player)
+        if (Owner != player)
             return false;
         alternatives.RemoveAll(x => x.OptionId == "Skip");
         return true;
