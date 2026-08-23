@@ -1,3 +1,5 @@
 {
-  
+  "BAGELSMOD-FLICKERING_CANDLE_POWER.title": "Flickering",
+  "BAGELSMOD-FLICKERING_CANDLE_POWER.description": "Energy is preserved and you cannot gain ANY energy for the first 3 turns of combat.",
+  "BAGELSMOD-FLICKERING_CANDLE_POWER.smartDescription": "Energy is preserved and you cannot gain ANY energy for the next [blue]{Amount}[/blue] {Amount:plural:turn|turns}."
 }

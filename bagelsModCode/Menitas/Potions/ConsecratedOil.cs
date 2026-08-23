@@ -14,7 +14,7 @@ using MegaCrit.Sts2.Core.Nodes.Rooms;
 namespace bagelsMod.bagelsModCode.Menitas.Potions;
 
 [Pool(typeof(EventPotionPool))]
-public class MomentOfClarity : CustomPotionModel
+public class ConsecratedOil : CustomPotionModel
 {
     public override PotionRarity Rarity => PotionRarity.Token;
     

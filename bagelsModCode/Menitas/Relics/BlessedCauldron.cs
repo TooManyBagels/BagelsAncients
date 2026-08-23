@@ -16,13 +16,13 @@ public class BlessedCauldron : BagelsModRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPotion<MomentOfClarity>()];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPotion<ConsecratedOil>()];
     
     public override bool TryModifyRewards(Player player, List<Reward> rewards, AbstractRoom? room)
     {
         if (player != Owner || room?.RoomType != RoomType.Elite)
             return false;
-        rewards.Add(new PotionReward(ModelDb.Potion<MomentOfClarity>().ToMutable(), player));
+        rewards.Add(new PotionReward(ModelDb.Potion<ConsecratedOil>().ToMutable(), player));
         return true;
     }
 }

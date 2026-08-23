@@ -45,7 +45,7 @@ public class HoneyPot : BagelsModRelic
     {
         if (this.Owner != player)
             return false;
-        alternatives.Add(new MegaCrit.Sts2.Core.Entities.CardRewardAlternatives.CardRewardAlternative("TAKE ALL", () => TakeAll(cardReward), PostAlternateCardRewardAction.EndSelectionAndCompleteReward));
+        alternatives.Add(new MegaCrit.Sts2.Core.Entities.CardRewardAlternatives.CardRewardAlternative("TAKE_ALL", () => TakeAll(cardReward), PostAlternateCardRewardAction.EndSelectionAndCompleteReward));
         return true;
     }
 

@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Rewards;
 using MegaCrit.Sts2.Core.Runs;
 
-namespace bagelsMod.bagelsModCode.Menitas.Relics;
+namespace bagelsMod.bagelsModCode.Phthalo.Relics;
 
 [Pool(typeof(EventRelicPool))]
 public class DragonEgg : BagelsModRelic

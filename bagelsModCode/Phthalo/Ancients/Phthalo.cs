@@ -15,20 +15,20 @@ public class Phthalo : CustomAncientModel
 
     protected override OptionPools MakeOptionPools => new (
         [
-            AncientOption<BuriedStash>(),
-            AncientOption<RoastedChestnuts>(),
+            AncientOption<FlickeringCandle>(),
+            AncientOption<BoilingKettle>(),
             AncientOption<CircletOfLife>(),
         ],
         [
             AncientOption<OakHeart>(),
             AncientOption<BuzzingHive>(),
-            AncientOption<SedativeSap>()
+            AncientOption<SedativeSap>(),
+            AncientOption<AxolotlTail>()
         ],
         [
-            AncientOption<PhialOfYouth>(),
+            AncientOption<DragonEgg>(),
             AncientOption<EncasingEmber>(),
             AncientOption<HoneyPot>(),
-            AncientOption<AxolotlTail>()
         ]
     );
     
