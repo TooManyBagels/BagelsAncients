@@ -41,7 +41,7 @@ public class GremlinSatchel : BagelsModRelic
         if(player != Owner || room == null || !room.RoomType.IsCombatRoom() || room.RoomType == RoomType.Boss && player.RunState.CurrentActIndex >= player.RunState.Acts.Count - 1)
             return false;
         var goldGiven =  DynamicVars.Gold.IntValue-_turnNum*DynamicVars["GoldReduction"].IntValue;
-        rewards.Add(new GoldReward(goldGiven, player));
+        if(goldGiven > 0) rewards.Add(new GoldReward(goldGiven, player));
         return true;
     }
 }

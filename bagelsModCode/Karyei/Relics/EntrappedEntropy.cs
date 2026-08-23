@@ -1,4 +1,5 @@
-﻿using bagelsMod.bagelsModCode.Templates;
+﻿using bagelsMod.bagelsModCode.Karyei.Potions;
+using bagelsMod.bagelsModCode.Templates;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
@@ -18,21 +19,11 @@ public class EntrappedEntropy : BagelsModRelic
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
 
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPotion<EntropicBrew>()];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPotion<PandorasBrew>()];
     
-    public override Task AfterObtained()
+    public override async Task BeforeCombatStartLate()
     {
-        var potionSlots = Owner.PotionSlots.Count;
-        for(var i = 0; i < potionSlots; i++) PotionCmd.TryToProcure<EntropicBrew>(Owner);
-        return Task.CompletedTask;
-    }
-
-    public override async Task AfterPotionUsed(PotionModel potion, Creature? target)
-    {
-        if (potion.Owner != Owner || !CombatManager.Instance.IsInProgress)
-            return;
         Flash();
-        var cardsInHand = PileType.Hand.GetPile(Owner).Cards.ToList();
-        foreach (var c in cardsInHand) await CardCmd.TransformToRandom(c, Owner.RunState.Rng.CombatCardSelection);
+        await PotionCmd.TryToProcure<PandorasBrew>(Owner);
     }
 }
