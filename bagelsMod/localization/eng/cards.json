@@ -9,6 +9,7 @@
   "BAGELSMOD-OBSESSION.title": "Obsession",
   "BAGELSMOD-OBSESSION.description": "When drawn, add an [red]Obsession[/red] to your [gold]Draw Pile[/gold].",
 
+  
   "BAGELSMOD-PRESERVED_VINES.title": "Preserved Vines",
   "BAGELSMOD-PRESERVED_VINES.description": "Can be dissolved at [gold]Rest Sites[/gold].\nStrengthen vines by [blue]{ThornsIncrement}[/blue] [gold]Thorns[/gold] and [blue]{PlatingIncrement}[/blue] [gold]Plating[/gold].\n(Currently [blue]{ThornsPower}[/blue] [gold]Thorns[/gold] and [blue]{PlatingPower}[/blue] [gold]Plating[/gold])",
   "BAGELSMOD-MYSTERIOUS_SEED.title": "Mysterious Seed",
