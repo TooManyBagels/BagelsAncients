@@ -25,12 +25,10 @@ public class TiltAWhirl : BagelsModRelic
             return;
         }
         var hand = PileType.Hand.GetPile(Owner);
-        var card = Owner.RunState.Rng.Shuffle.NextItem<CardModel>(hand.Cards.Where(c => !c.Keywords.Contains(CardKeyword.Unplayable)).ToList());
+        var card = Owner.RunState.Rng.Shuffle.NextItem(hand.Cards.Where(c => !c.Keywords.Contains(CardKeyword.Unplayable)).ToList());
         if (card != null) 
             await CardCmd.AutoPlay(choiceContext, card, null);
-        hand = PileType.Hand.GetPile(Owner);
-        card = Owner.RunState.Rng.Shuffle.NextItem(hand.Cards.ToList());
-        if (card != null) 
+        if (card != null)
             await CardCmd.Exhaust(choiceContext, card);
     }
 }

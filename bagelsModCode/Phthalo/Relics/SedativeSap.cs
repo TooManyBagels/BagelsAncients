@@ -32,7 +32,7 @@ public class SedativeSap : BagelsModRelic
     {
         foreach (var p in participants)
         {
-            if (p.IsAlive && p.CurrentHp < p.MaxHp * DynamicVars["HPThreshold"].BaseValue / 100)
+            if (p.IsEnemy && !p.HasPower<SlowPower>() && p.CurrentHp <= p.MaxHp * DynamicVars["HPThreshold"].BaseValue / 100)
                 await PowerCmd.Apply<SlowPower>(new ThrowingPlayerChoiceContext(), p, 1, Owner.Creature, null);
         }
     }

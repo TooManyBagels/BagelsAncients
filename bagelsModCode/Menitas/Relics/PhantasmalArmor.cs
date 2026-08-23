@@ -22,7 +22,7 @@ public class PhantasmalArmor : BagelsModRelic
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(7, ValueProp.Unpowered)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(7, ValueProp.Unpowered), new PowerVar<BlurPower>(1)];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
@@ -43,7 +43,7 @@ public class PhantasmalArmor : BagelsModRelic
         _triggeredThisTurn = true;
         Flash();
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, null);
-        await PowerCmd.Apply<BlurPower>(new ThrowingPlayerChoiceContext(), Owner.Creature, 1, Owner.Creature, null);
+        await PowerCmd.Apply<BlurPower>(new ThrowingPlayerChoiceContext(), Owner.Creature, DynamicVars["BlurPower"].BaseValue, Owner.Creature, null);
     }
     
     public override Task BeforeSideTurnStart(

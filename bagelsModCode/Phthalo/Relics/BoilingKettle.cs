@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 namespace bagelsMod.bagelsModCode.Phthalo.Relics;
 
 [Pool(typeof(EventRelicPool))]
-public class RoastedChestnuts : BagelsModRelic
+public class BoilingKettle : BagelsModRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
@@ -37,14 +37,14 @@ public class RoastedChestnuts : BagelsModRelic
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new ("RoastLevel", Amount),
+        new ("BoilLevel", Amount),
         new CardsVar(1),
         new EnergyVar(1)
     ];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        HoverTipFactory.ForEnergy(this)
+        HoverTipFactory.Static(StaticHoverTip.Energy)
     ];
     
     public override Decimal ModifyMaxEnergy(Player player, Decimal amount)
@@ -65,11 +65,11 @@ public class RoastedChestnuts : BagelsModRelic
     {
         if (player != Owner)
             return false;
-        options.Add(new RoastRestSiteAction(player));
+        options.Add(new BoilRestSiteAction(player));
         return true;
     }
     
-    public void Roast()
+    public void Boil()
     {
         Amount++;
         Flash();

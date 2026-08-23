@@ -19,12 +19,12 @@ public class Menitas : CustomAncientModel
             AncientOption<SimpleRune>(),
             AncientOption<WrithingTongs>(),
             AncientOption<BlessedCauldron>(),
-            AncientOption<DragonEgg>()
         ],
         [
             AncientOption<HuntersBlade>(),
             AncientOption<PhantasmalArmor>(),
-            AncientOption<ElegantRune>()
+            AncientOption<InfectedScythe>(),
+            AncientOption<GremlinSatchel>()
         ],
         [
             AncientOption<BitingBrace>(),
