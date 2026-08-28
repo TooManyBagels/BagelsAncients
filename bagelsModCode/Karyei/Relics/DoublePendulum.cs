@@ -9,6 +9,7 @@ using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Rooms;
+using MegaCrit.Sts2.Core.Saves.Runs;
 
 namespace bagelsMod.bagelsModCode.Karyei.Relics;
 
@@ -27,9 +28,9 @@ public class DoublePendulum : BagelsModRelic
     public override int DisplayAmount => !IsActivating ? TurnsSeen : DynamicVars["Turns"].IntValue;
 
     protected override IEnumerable<DynamicVar> CanonicalVars => 
-        [new DynamicVar("Turns", 2), 
+        [new ("Turns", 2), 
             new CardsVar(3),
-            new DynamicVar("DrawDown", 1)
+            new ("DrawDown", 1)
         ];
 
     private bool IsActivating
@@ -43,6 +44,7 @@ public class DoublePendulum : BagelsModRelic
         }
     }
 
+    [SavedProperty]
     private int TurnsSeen
     {
         get => _turnsSeen;
@@ -68,7 +70,7 @@ public class DoublePendulum : BagelsModRelic
         PlayerChoiceContext choiceContext,
         ICombatState combatState)
     {
-        if (player != this.Owner)
+        if (player != Owner)
             return Task.CompletedTask;
         TurnsSeen=(TurnsSeen+1)%DynamicVars["Turns"].IntValue;
         Status = TurnsSeen == DynamicVars["Turns"].IntValue - 1 ? RelicStatus.Active : RelicStatus.Normal;
