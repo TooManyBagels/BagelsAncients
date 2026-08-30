@@ -1,37 +1,39 @@
-﻿using bagelsMod.bagelsModCode.Phthalo.Relics;
+﻿using bagelsMod.bagelsModCode.Mnemi.Relics;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Relics;
 
-namespace bagelsMod.bagelsModCode.Phthalo.Ancients;
+namespace bagelsMod.bagelsModCode.Mnemi.Ancients;
 
-public class Phthalo : CustomAncientModel
+[Pool(typeof(AncientEventModel))]
+public class Mnemi : CustomAncientModel
 {
     public override bool IsValidForAct(ActModel act)
     {
-        return act.ActNumber() == 3;
+        return act.ActNumber() == 2;
     }
-
-    protected override OptionPools MakeOptionPools => new (
+    
+    protected override OptionPools MakeOptionPools => new OptionPools(
         [
-            AncientOption<FlickeringCandle>(),
-            AncientOption<BoilingKettle>(),
-            AncientOption<CarvedSnake>(),
+            AncientOption<BigHouse>(),
+            AncientOption<FriendshipBracelet>(),
+            AncientOption<HeartLocket>(),
         ],
         [
-            AncientOption<OakHeart>(),
-            AncientOption<BuzzingHive>(),
-            AncientOption<SedativeSap>(),
-            AncientOption<AxolotlTail>()
+            AncientOption<FamilyRecipe>(),
+            AncientOption<Photograph>(),
+            AncientOption<ReflectingPool>(),
+            AncientOption<RoseColoredGlasses>()
         ],
         [
-            AncientOption<DragonEgg>(),
-            AncientOption<EncasingEmber>(),
-            AncientOption<HoneyPot>(),
+            AncientOption<SaltShaker>(),
+            AncientOption<Gramophone>(),
+            AncientOption<Scrapbook>(),
         ]
     );
-    
+
     public override string CustomScenePath => "res://bagelsMod/scenes/bagelsmod-menitas.tscn";
     public override string CustomMapIconPath => "res://bagelsMod/images/ancients/menitas.png";
     public override string CustomMapIconOutlinePath => "res://bagelsMod/images/ancients/menitas_outline.png";

@@ -7,5 +7,8 @@
   "BAGELSMOD-BLOOD_PACT.extraCardText": "Lose [red]{HpLoss:diff()}[/red] HP.",
   
   "BAGELSMOD-HIVE.title": "Hive",
-  "BAGELSMOD-HIVE.description": "When drawn, add all [gold]Hive[/gold] cards in your [gold]Draw Pile[/gold] to your [gold]Hand[/gold]."
+  "BAGELSMOD-HIVE.description": "When drawn, add all [gold]Hive[/gold] cards in your [gold]Draw Pile[/gold] to your [gold]Hand[/gold].",
+  
+  "BAGELSMOD-COPIED.title": "Copied",
+  "BAGELSMOD-COPIED.description": "Gain [gold]Replay 1[/gold]. Starts at the bottom of your [gold]Draw Pile[/gold]."
 }

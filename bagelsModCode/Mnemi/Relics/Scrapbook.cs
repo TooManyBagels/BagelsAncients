@@ -7,13 +7,12 @@ using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 
-namespace bagelsMod.bagelsModCode.Phthalo.Relics;
+namespace bagelsMod.bagelsModCode.Mnemi.Relics;
 
 [Pool(typeof(EventRelicPool))]
-public class CircletOfLife : BagelsModRelic
+public class Scrapbook : BagelsModRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;

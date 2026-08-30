@@ -2,8 +2,8 @@
   "BAGELSMOD-MENITAS.title": "Menitas",
   "BAGELSMOD-MENITAS.epithet": "The Remaining Blacksmith",
   "BAGELSMOD-MENITAS.talk.firstVisitEver.0-0.ancient": "Who wishes to gaze upon my glorious work?",
-  "BAGELSMOD-MENITAS.talk.ANY.0-0r.ancient": "Ah, a mortal. You may look, but you may not touch.",
-  "BAGELSMOD-MENITAS.talk.ANY.1-0.ancient": "Ah, you. Perhaps it's time one of these tools saw usage in the battlefield anyways",
+  "BAGELSMOD-MENITAS.talk.ANY.0-0r.ancient": "Ah, a mortal. You may look, but you may not touch... until you tell me what you desire.",
+  "BAGELSMOD-MENITAS.talk.ANY.1-0.ancient": "You again. Perhaps it's time one of these tools saw usage in the battlefield anyways",
 
   "BAGELSMOD-KARYEI.title": "Karyei",
   "BAGELSMOD-KARYEI.epithet": "Unknowable Chaos",
@@ -13,5 +13,10 @@
   "BAGELSMOD-PHTHALO.title": "Phthalo",
   "BAGELSMOD-PHTHALO.epithet": "Lifegiver",
   "BAGELSMOD-PHTHALO.talk.firstVisitEver.0-0.ancient": "???",
-  "BAGELSMOD-PHTHALO.talk.ANY.0-0r.ancient": "???"
+  "BAGELSMOD-PHTHALO.talk.ANY.0-0r.ancient": "???",
+
+  "BAGELSMOD-MNEMI.title": "Mnemi",
+  "BAGELSMOD-MNEMI.epithet": "Spirit of Reflection",
+  "BAGELSMOD-MNEMI.talk.firstVisitEver.0-0.ancient": "???",
+  "BAGELSMOD-MNEMI.talk.ANY.0-0r.ancient": "???"
 }
