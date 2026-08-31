@@ -9,7 +9,7 @@ namespace bagelsMod.bagelsModCode.Mnemi.Relics;
 public class HeartLocket : BagelsModRelic
 {
     public override RelicRarity Rarity =>
-        RelicRarity.Starter;
+        RelicRarity.Ancient;
 
     
 }

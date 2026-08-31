@@ -21,7 +21,7 @@
   "BAGELSMOD-WRITHING_TONGS.description": "Upon pickup, add [blue]1[/blue] [gold]Improvise[/gold] to your [gold]Deck[/gold].",
   "BAGELSMOD-WRITHING_TONGS.flavor": "These cursed tongs shift in your hand, but they seem at peace.",
   "BAGELSMOD-BLESSED_CAULDRON.title": "Blessed Cauldron",
-  "BAGELSMOD-BLESSED_CAULDRON.description": "Procure a [gold]Moment of Clarity[/gold] upon defeating [gold]Elites[/gold].",
+  "BAGELSMOD-BLESSED_CAULDRON.description": "Procure a [gold]Consecrated Oil[/gold] upon defeating [gold]Elites[/gold].",
   "BAGELSMOD-BLESSED_CAULDRON.flavor": "Saps the lifeforce of deadly creatures and synthesizes it into pure bliss.",
   "BAGELSMOD-GREMLIN_SATCHEL.title": "Gremlin Satchel",
   "BAGELSMOD-GREMLIN_SATCHEL.description": "At the end of combat, gain [blue]{Gold:diff()}[/blue] [gold]Gold[/gold]. Reduce by [blue]{GoldReduction}[/blue] [gold]Gold[/gold] for each turn taken.",
@@ -126,6 +126,6 @@
   "BAGELSMOD-HEART_LOCKET.description": "Upon pickup, trade any amount of your non starter, non Ancient [gold]Relics[/gold] for a random [gold]Relic[/gold].",
   "BAGELSMOD-HEART_LOCKET.flavor": "Forever and ever and ever and ever...",
   "BAGELSMOD-FRIENDSHIP_BRACELET.title": "Friendship Bracelet",
-  "BAGELSMOD-FRIENDSHIP_BRACELET.description": "Transform {Cards:diff()} cards into cards of the same rarity and [gold]Upgrade[/gold] them.",
+  "BAGELSMOD-FRIENDSHIP_BRACELET.description": "Transform [blue]{Cards:diff()}[/blue] cards into cards of the same rarity and [gold]Upgrade[/gold] them.",
   "BAGELSMOD-FRIENDSHIP_BRACELET.flavor": "A pattern with meaning only those closest to the creator can decipher."
 }
