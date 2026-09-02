@@ -26,7 +26,7 @@
   "BAGELSMOD-GREMLIN_SATCHEL.title": "Gremlin Satchel",
   "BAGELSMOD-GREMLIN_SATCHEL.description": "At the end of combat, gain [blue]{Gold:diff()}[/blue] [gold]Gold[/gold]. Reduce by [blue]{GoldReduction}[/blue] [gold]Gold[/gold] for each turn taken.",
   "BAGELSMOD-GREMLIN_SATCHEL.flavor": "Fits large quantities of gold, but seems to leak.",
-  "BAGELSMOD-INFECTED_SCYTHE.title": "Infected Scythe",git 
+  "BAGELSMOD-INFECTED_SCYTHE.title": "Infected Scythe",
   "BAGELSMOD-INFECTED_SCYTHE.description": "Whenever you play a [gold]Skill[/gold], gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold] this turn.",
   "BAGELSMOD-INFECTED_SCYTHE.flavor": "Channels a tainted energy into power",
   

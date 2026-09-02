@@ -1,6 +1,10 @@
-﻿using MegaCrit.Sts2.Core.Commands;
+﻿using System.Runtime.CompilerServices;
+using Godot;
+using MegaCrit.Sts2.Core.Assets;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Factories;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
@@ -11,6 +15,8 @@ namespace bagelsMod.bagelsModCode.Classes;
 public class RelicTradeReward : RelicReward
 {
     private readonly RelicModel _relic;
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => _relic.HoverTips;
     
     public override LocString Description
     {
@@ -37,5 +43,17 @@ public class RelicTradeReward : RelicReward
     
     public override void OnSkipped()
     { 
+    }
+    
+    [PreserveBaseOverrides]
+    public override TextureRect CreateIcon()
+    {
+        TextureRect texture = new TextureRect();
+        texture.Texture = _relic.BigIcon;
+        texture.Material = (Material) PreloadManager.Cache.GetMaterial("res://materials/ui/relic_mat.tres").Duplicate(true);
+        _relic.UpdateTexture(texture);
+        texture.SetAnchorsPreset(Control.LayoutPreset.FullRect);
+        texture.ExpandMode = TextureRect.ExpandModeEnum.IgnoreSize;
+        return texture;
     }
 }

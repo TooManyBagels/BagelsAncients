@@ -6,7 +6,7 @@ namespace bagelsMod.bagelsModCode.Phthalo.RestSiteOptions;
 
 public class BoilRestSiteAction(Player owner) : CustomRestSiteOption(owner)
 {
-    public override string OptionId => "Boil";
+    public override string OptionId => "BOIL";
     
     public override Task<bool> OnSelect()
     {

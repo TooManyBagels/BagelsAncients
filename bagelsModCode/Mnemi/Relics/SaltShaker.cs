@@ -33,11 +33,10 @@ public class SaltShaker : BagelsModRelic
         return player != Owner ? amount : amount + DynamicVars.Energy.IntValue;
     }
 
-    public override Task BeforeSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
+    public override async Task BeforeSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
-        if (Owner.PlayerCombatState is null) return base.BeforeSideTurnEnd(choiceContext, side, participants);
+        if (Owner.PlayerCombatState is null) return;
         var hand = PileType.Hand.GetPile(Owner).Cards.Where(c => !c.Keywords.Contains(CardKeyword.Ethereal)).ToList();
-        foreach (var c in hand) CardPileCmd.Add(c, PileType.Draw);
-        return base.BeforeSideTurnEnd(choiceContext, side, participants);
+        foreach (var c in hand) await CardPileCmd.Add(c, PileType.Draw);
     }
 }
