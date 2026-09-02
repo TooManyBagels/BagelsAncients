@@ -22,9 +22,9 @@ Boot up Slay the Spire and you should see Bagel's Ancients in your modded settin
 If you want to experience the content without playing several runs, you can force Ancients through the console (accessible through `) with the commands:
 
 ### Act 2 Ancients
-event BAGELSMOD_MENITAS 
+event BAGELSMOD-MENITAS 
 
-event BAGELSMOD_PHTHALO
+event BAGELSMOD-PHTHALO
 
 ### Act 3 Ancient
-event BAGELSMOD_KARYEI 
+event BAGELSMOD-KARYEI 
