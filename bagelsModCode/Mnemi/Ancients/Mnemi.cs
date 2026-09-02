@@ -3,7 +3,6 @@ using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Relics;
 
 namespace bagelsMod.bagelsModCode.Mnemi.Ancients;
 
@@ -12,7 +11,7 @@ public class Mnemi : CustomAncientModel
 {
     public override bool IsValidForAct(ActModel act)
     {
-        return act.ActNumber() == 2;
+        return act.ActNumber() == 3;
     }
     
     protected override OptionPools MakeOptionPools => new OptionPools(

@@ -17,5 +17,5 @@
   "BAGELSMOD-ENDLESS_TROVE.description": "Can be [gold]Removed[/gold] to obtain a [gold]Relic[/gold] for each time this has been played this run.\n(Currently {Relics} [gold]Relics[/gold])",
   
   "BAGELSMOD-TOTAL_RECALL.title": "Total Recall",
-  "BAGELSMOD-TOTAL_RECALL.description": "Play a random card in your [gold]Discard Pile[/gold] [blue]{Cards:diff()}[/blue] times."
+  "BAGELSMOD-TOTAL_RECALL.description": "Give a random card without [gold]Replay[/gold] in your [gold]Discard Pile[/gold] [gold]Replay[/gold] [blue]{Replay}[/blue]. Play it."
 }

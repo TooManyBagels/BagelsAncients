@@ -120,7 +120,7 @@
   "BAGELSMOD-SCRAPBOOK.description": "At the end of your turn, [gold]Retain[/gold] a random card and reduce its cost by {Energy:energyIcons()} until played.",
   "BAGELSMOD-SCRAPBOOK.flavor": "Old memories, reorganized",
   "BAGELSMOD-FAMILY_RECIPE.title": "Family Recipe",
-  "BAGELSMOD-FAMILY_RECIPE.description": "[gold]Potions[/gold] gain [gold]Replay 1[/gold]",
+  "BAGELSMOD-FAMILY_RECIPE.description": "[gold]Potions[/gold] are [gold]Replayed[/gold].",
   "BAGELSMOD-FAMILY_RECIPE.flavor": "It tastes of home.",
   "BAGELSMOD-HEART_LOCKET.title": "Heart Locket",
   "BAGELSMOD-HEART_LOCKET.description": "Upon pickup, trade any amount of your non starter, non Ancient [gold]Relics[/gold] for a random [gold]Relic[/gold].",
