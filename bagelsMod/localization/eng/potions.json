@@ -3,5 +3,5 @@
   "BAGELSMOD-CONSECRATED_OIL.description": "Heal for [gold]10%[/gold] of your Max HP. If in combat, [gold]Upgrade[/gold] your entire deck.",
   
   "BAGELSMOD-PANDORAS_BREW.title": "Pandora's Brew",
-  "BAGELSMOD-PANDORAS_BREW.description": "[gold]Transform[/gold] then [gold]Upgrade[/gold] your [gold]Hand[/gold]."
+  "BAGELSMOD-PANDORAS_BREW.description": "Gain {Energy:energyIcons()}. [gold]Transform[/gold] then [gold]Upgrade[/gold] your [gold]Hand[/gold]."
 }
