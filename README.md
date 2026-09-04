@@ -6,7 +6,9 @@ Menitas, the Remaining Blacksmith- An act 2 Ancient who has hunted the enemies o
 
 Phthalo, Lifegiver- An act 2 ancient that specializes in scaling and HP based effects.
 
-Karyei, Unknowable Chaos- An act 3 ancient which specializes in wild effects with drastic downsides
+Karyei, Unknowable Chaos- An act 3 ancient which specializes in wild effects with drastic downsides. 
+
+Mnemi, Spirit of Reflection- An act 3 ancient which has relics to do with trading, replaying, and energy relics that force you to manipulate your deck in interesting ways.
 
 The Ancients are intended to be balanced relatively closely with the base game, and not feel dramatically strong or weak, while providing interesting decision making.
 
@@ -28,3 +30,5 @@ event BAGELSMOD-PHTHALO
 
 ### Act 3 Ancient
 event BAGELSMOD-KARYEI 
+
+event BAGELSMOD-MNEMI
