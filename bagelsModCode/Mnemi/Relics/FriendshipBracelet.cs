@@ -31,7 +31,7 @@ public class FriendshipBracelet : BagelsModRelic
     
     public override async Task AfterObtained()
     {
-        var cards = await CardSelectCmd.FromDeckGeneric(Owner, new CardSelectorPrefs(CardSelectorPrefs.TransformSelectionPrompt, DynamicVars.Cards.IntValue));
+        var cards = await CardSelectCmd.FromDeckGeneric(Owner, new CardSelectorPrefs(CardSelectorPrefs.TransformSelectionPrompt, 0, DynamicVars.Cards.IntValue), c => !c.CanonicalKeywords.Contains(CardKeyword.Eternal));
         NRun.Instance?.GlobalUi.GridCardPreviewContainer.ForceMaxColumnsUntilEmpty(4);
         foreach (var original in cards)
         {
