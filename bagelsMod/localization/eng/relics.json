@@ -117,7 +117,7 @@
   "BAGELSMOD-PHOTOGRAPH.description": "Upon pickup, [gold]Enchant[/gold] up to [purple]{Cards:diff()}[/purple] cards with [gold]Copied[/gold].",
   "BAGELSMOD-PHOTOGRAPH.flavor": "Look at this Photograph",
   "BAGELSMOD-SCRAPBOOK.title": "Scrapbook",
-  "BAGELSMOD-SCRAPBOOK.description": "At the end of your turn, [gold]Retain[/gold] a random card and reduce its cost by {Energy:energyIcons()} until played.",
+  "BAGELSMOD-SCRAPBOOK.description": "At the end of your turn, [gold]Retain[/gold] the most expensive card and reduce its cost by {Energy:energyIcons()} until played.",
   "BAGELSMOD-SCRAPBOOK.flavor": "Old memories, reorganized",
   "BAGELSMOD-FAMILY_RECIPE.title": "Family Recipe",
   "BAGELSMOD-FAMILY_RECIPE.description": "[gold]Potions[/gold] are [gold]Replayed[/gold].",

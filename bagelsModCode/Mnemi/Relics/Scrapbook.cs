@@ -29,8 +29,12 @@ public class Scrapbook : BagelsModRelic
 
     public override Task BeforeSideTurnEndEarly(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
-        var hand = PileType.Hand.GetPile(Owner);
-        var card = Owner.RunState.Rng.Shuffle.NextItem(hand.Cards.Where(c => !c.Keywords.Contains(CardKeyword.Unplayable)).ToList());
+        if (side != Owner.Creature.Side) return base.BeforeSideTurnEndEarly(choiceContext, side, participants);;
+        var hand = PileType.Hand.GetPile(Owner).Cards.ToList();
+        var max = 0;
+        foreach(var c in hand)
+            if (c.EnergyCost.Canonical > max) max = c.EnergyCost.Canonical;
+        var card = Owner.RunState.Rng.Shuffle.NextItem(hand.Where(c => !c.Keywords.Contains(CardKeyword.Unplayable) && c.EnergyCost.Canonical == max).ToList());
         if (card == null) return base.BeforeSideTurnEndEarly(choiceContext, side, participants);
         card.GiveSingleTurnRetain();
         if(!card.EnergyCost.CostsX || !card.Keywords.Contains(CardKeyword.Unplayable))
