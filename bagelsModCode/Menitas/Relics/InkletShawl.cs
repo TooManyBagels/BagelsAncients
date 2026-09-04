@@ -10,6 +10,7 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Models.RelicPools;
+using MegaCrit.Sts2.Core.Rooms;
 
 namespace bagelsMod.bagelsModCode.Menitas.Relics;
 
@@ -22,26 +23,21 @@ public class InkletShawl : BagelsModRelic
     protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(1)];
 
     public override bool HasUponPickupEffect => true;
-
-    public override async Task AfterObtained()
-    {
-        var card = Owner.RunState.CreateCard<Slip>(Owner);
-        CardCmd.PreviewCardPileAdd([await CardPileCmd.Add(card, PileType.Deck)], 2f);
-    }
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        ..HoverTipFactory.FromCardWithCardHoverTips<Slip>(),
         HoverTipFactory.FromPower<SlipperyPower>(),
         HoverTipFactory.Static(StaticHoverTip.Energy)
     ];
 
-    public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
+    public override decimal ModifyMaxEnergy(Player player, decimal amount)
     {
-        if(!this.Owner.Creature.HasPower<SlipperyPower>())
-        {
-            return;
-        }
-        this.Flash();
-        await PlayerCmd.GainEnergy(this.DynamicVars.Energy.BaseValue, this.Owner);
+        return Owner.Creature.HasPower<SlipperyPower>() ? amount + DynamicVars.Energy.BaseValue : amount;
+    }
+
+    public override async Task AfterRoomEntered(AbstractRoom room)
+    {
+        if (room is not CombatRoom) return;
+        Flash();
+        await PowerCmd.Apply<SlipperyPower>(new ThrowingPlayerChoiceContext(), Owner.Creature, 1, Owner.Creature, null);
     }
 }
