@@ -10,6 +10,8 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.Models.RelicPools;
+using MegaCrit.Sts2.Core.Nodes;
+using MegaCrit.Sts2.Core.Nodes.CommonUi;
 using MegaCrit.Sts2.Core.Runs;
 
 namespace bagelsMod.bagelsModCode.Mnemi.Relics;
@@ -24,12 +26,14 @@ public class FriendshipBracelet : BagelsModRelic
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new CardsVar(5)
+        new CardsVar(8)
     ];
     
     public override async Task AfterObtained()
     {
-        foreach (var original in (await CardSelectCmd.FromDeckForTransformation(Owner, new CardSelectorPrefs(CardSelectorPrefs.TransformSelectionPrompt, DynamicVars.Cards.IntValue))).ToList())
+        var cards = await CardSelectCmd.FromDeckGeneric(Owner, new CardSelectorPrefs(CardSelectorPrefs.TransformSelectionPrompt, DynamicVars.Cards.IntValue));
+        NRun.Instance?.GlobalUi.GridCardPreviewContainer.ForceMaxColumnsUntilEmpty(4);
+        foreach (var original in cards)
         {
             IEnumerable<CardModel> options;
             switch (original.Rarity)
@@ -48,7 +52,7 @@ public class FriendshipBracelet : BagelsModRelic
             }
             var cardForTransform = original.Rarity is CardRarity.Basic ? Owner.RunState.CreateCard(options.First(), Owner) : CardFactory.CreateRandomCardForTransform(original, options, false, Owner.RunState.Rng.Niche);
             CardCmd.Upgrade(cardForTransform);
-            await CardCmd.Transform(original, cardForTransform);
+            await CardCmd.Transform(original, cardForTransform, CardPreviewStyle.GridLayout);
         }
     }
 }
