@@ -1,5 +1,4 @@
-﻿using bagelsMod.bagelsModCode.Mnemi.Enchantments;
-using bagelsMod.bagelsModCode.Templates;
+﻿using bagelsMod.bagelsModCode.Templates;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
@@ -22,7 +21,6 @@ public class TotalRecall() : BagelsModCard(1,
     public override bool CanBeGeneratedInCombat => false;
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [
-        ..HoverTipFactory.FromEnchantment<Copied>(),
         HoverTipFactory.Static(StaticHoverTip.ReplayStatic),
     ];
 

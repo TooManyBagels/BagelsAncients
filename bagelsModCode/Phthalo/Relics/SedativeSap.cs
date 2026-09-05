@@ -7,8 +7,10 @@ using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Models.RelicPools;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace bagelsMod.bagelsModCode.Phthalo.Relics;
 
@@ -20,7 +22,7 @@ public class SedativeSap : BagelsModRelic
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new ("HPThreshold", 50)
+        new ("HPThreshold", 75)
     ];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
@@ -28,12 +30,12 @@ public class SedativeSap : BagelsModRelic
         HoverTipFactory.FromPower<SlowPower>()
     ];
 
-    public override async Task AfterSideTurnStart(CombatSide side, IReadOnlyList<Creature> participants, ICombatState combatState)
+    public override async Task AfterCurrentHpChanged(Creature creature, decimal delta)
     {
-        foreach (var p in participants)
-        {
-            if (p.IsEnemy && !p.HasPower<SlowPower>() && p.CurrentHp <= p.MaxHp * DynamicVars["HPThreshold"].BaseValue / 100)
-                await PowerCmd.Apply<SlowPower>(new ThrowingPlayerChoiceContext(), p, 1, Owner.Creature, null);
-        }
+        if (!CombatManager.Instance.IsInProgress || creature.Side is not CombatSide.Enemy) return;
+        var originalHealth =  creature.CurrentHp - delta;
+        var threshold = creature.MaxHp * DynamicVars["HPThreshold"].BaseValue / 100;
+        if (originalHealth > threshold && creature.CurrentHp < threshold)
+            await PowerCmd.Apply<SlowPower>(new ThrowingPlayerChoiceContext(), creature, 1, Owner.Creature, null);
     }
 }

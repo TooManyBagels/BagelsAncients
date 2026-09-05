@@ -1,5 +1,6 @@
 ﻿using bagelsMod.bagelsModCode.Templates;
 using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -24,6 +25,24 @@ public class GremlinSatchel : BagelsModRelic
         new ("GoldReduction", 10)
     ];
 
+    public override bool ShowCounter
+    {
+        get
+        {
+            if (!CombatManager.Instance.IsInProgress) return false;
+            return true;
+        }
+    }
+
+    public override int DisplayAmount
+    {
+        get
+        {
+            var goldToGive = DynamicVars.Gold.IntValue - _turnNum*DynamicVars["GoldReduction"].IntValue;
+            return goldToGive > 0 ? goldToGive : 0;
+        }
+    }
+
     public override Task BeforeCombatStart()
     {
         _turnNum = 0;
@@ -33,6 +52,7 @@ public class GremlinSatchel : BagelsModRelic
     public override Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
     {
         _turnNum++;
+        InvokeDisplayAmountChanged();
         return base.AfterPlayerTurnStart(choiceContext, player);
     }
 

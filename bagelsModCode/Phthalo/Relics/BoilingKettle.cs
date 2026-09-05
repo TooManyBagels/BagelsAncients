@@ -5,9 +5,11 @@ using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Entities.RestSite;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.RelicPools;
+using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.Saves.Runs;
 
 namespace bagelsMod.bagelsModCode.Phthalo.Relics;
@@ -20,6 +22,8 @@ public class BoilingKettle : BagelsModRelic
 
     private int _amount = 1;
 
+    private int _turns;
+
     [SavedProperty]
     private int Amount
     {
@@ -30,11 +34,22 @@ public class BoilingKettle : BagelsModRelic
             InvokeDisplayAmountChanged();
         }
     }
+
+    private int Turns
+    {
+        get => _turns;
+        set
+        {
+            AssertMutable();
+            _turns = value;
+            InvokeDisplayAmountChanged();
+        }
+    }
+
+    public override bool ShowCounter => Amount - Turns > 0;
+
+    public override int DisplayAmount => Amount - Turns > 0 ? Amount - Turns : 0;
     
-    public override bool ShowCounter => true;
-
-    public override int DisplayAmount => Amount;
-
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
         new ("BoilLevel", Amount),
@@ -46,19 +61,29 @@ public class BoilingKettle : BagelsModRelic
     [
         HoverTipFactory.Static(StaticHoverTip.Energy)
     ];
-    
+
+    public override Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
+    {
+        Turns++;
+        if (Turns == Amount) Status = RelicStatus.Disabled;
+        return base.AfterPlayerTurnStart(choiceContext, player);
+    }
+
     public override Decimal ModifyMaxEnergy(Player player, Decimal amount)
     {
-        if(CombatManager.Instance.IsInProgress && Owner.PlayerCombatState.TurnNumber <= Amount)
-            return player != Owner ? amount : amount + DynamicVars.Energy.IntValue;
-        return amount;
+        return player != Owner || Turns > Amount - 1 ? amount : amount + DynamicVars.Energy.IntValue;
     }
 
     public override Decimal ModifyHandDraw(Player player, Decimal count)
     {
-        if(CombatManager.Instance.IsInProgress && Owner.PlayerCombatState.TurnNumber <= Amount)
-            return player != Owner ? count : count + DynamicVars.Energy.IntValue;
-        return count;
+        return player != Owner || Turns > Amount - 1 ? count : count + DynamicVars.Cards.IntValue;
+    }
+
+    public override Task AfterCombatEnd(CombatRoom room)
+    {
+        Turns = 0;
+        Status = RelicStatus.Normal;
+        return base.AfterCombatEnd(room);
     }
 
     public override bool TryModifyRestSiteOptions(Player player, ICollection<RestSiteOption> options)
