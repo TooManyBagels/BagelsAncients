@@ -12,7 +12,7 @@
   "BAGELSMOD-PHANTASMAL_ARMOR.description": "The first time you take unblocked damage each turn, gain [blue]{Block:diff()}[/blue] [gold]Block[/gold] and [blue]{BlurPower}[/blue] [gold]Blur[/gold].",
   "BAGELSMOD-PHANTASMAL_ARMOR.flavor": "Armor that wraps around the wearer at the first sign of danger.",
   "BAGELSMOD-BITING_BRACE.title": "Biting Brace",
-  "BAGELSMOD-BITING_BRACE.description": "At the start of your turn, gain {Energy:energyIcons()}. Whenever you take unblocked attack damage, lose [blue]{MaxHp:diff()}[/blue] Max HP.",
+  "BAGELSMOD-BITING_BRACE.description": "At the start of your turn, gain {Energy:energyIcons()}. Every [blue]{Hits}[/blue] times you take unblocked attack damage, lose [blue]{MaxHp:diff()}[/blue] Max HP.",
   "BAGELSMOD-BITING_BRACE.flavor": "With pain comes power.",
   "BAGELSMOD-SHATTERING_CRYSTAL.title": "Shattering Crystal",
   "BAGELSMOD-SHATTERING_CRYSTAL.description": "Upon pickup, [gold]Enchant[/gold] up to [purple]{Cards:diff()}[/purple] [gold]Attacks[/gold] or [gold]Skills[/gold] with [gold]Fragile[/gold].",
