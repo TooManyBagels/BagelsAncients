@@ -5,7 +5,7 @@
   "BAGELSMOD-ALL_OUT.title": "All Out",
   "BAGELSMOD-ALL_OUT.description": "Gain {Energy:energyIcons()}.\nDraw {Cards:diff()} cards.\nYou can no longer gain [gold]Block[/gold] from cards.",
   "BAGELSMOD-OBSESSION.title": "Obsession",
-  "BAGELSMOD-OBSESSION.description": "When drawn and at the end your turn, add a copy to your [gold]Discard Pile[/gold].",
+  "BAGELSMOD-OBSESSION.description": "When drawn and at the end of your turn, add a copy to your [gold]Discard Pile[/gold].",
   
   "BAGELSMOD-PRESERVED_VINES.title": "Preserved Vines",
   "BAGELSMOD-PRESERVED_VINES.description": "Can be dissolved at [gold]Rest Sites[/gold].\nStrengthen vines by [blue]{ThornsIncrement}[/blue] [gold]Thorns[/gold] and [blue]{PlatingIncrement}[/blue] [gold]Plating[/gold].\n(Currently [blue]{ThornsPower}[/blue] [gold]Thorns[/gold] and [blue]{PlatingPower}[/blue] [gold]Plating[/gold])",
