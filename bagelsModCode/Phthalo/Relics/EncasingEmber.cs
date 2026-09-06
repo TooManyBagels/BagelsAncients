@@ -40,11 +40,5 @@ public class EncasingEmber : BagelsModRelic
                 CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(Owner.RunState.CreateCard<EndlessTrove>(Owner), Owner.Deck));
                 break;
         }
-        
-        foreach(var c in questList)
-        {
-            if (c != reward)
-                Owner.RunState.CurrentMapPointHistoryEntry?.GetEntry(Owner.NetId).CardChoices.Add(new CardChoiceHistoryEntry(c, false));
-        }
     }
 }

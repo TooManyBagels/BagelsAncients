@@ -27,7 +27,6 @@ public class ConsecratedOil : CustomPotionModel
     protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
     {
         AssertValidForTargetedPotion(target);
-        NCombatRoom.Instance?.PlaySplashVfx(target, Colors.Red);
         await CreatureCmd.Heal(target, target.MaxHp * DynamicVars["HealPercent"].BaseValue / 100);
         if (!CombatManager.Instance.IsInProgress)
             return;
@@ -36,5 +35,6 @@ public class ConsecratedOil : CustomPotionModel
             if (allCard.IsUpgradable)
                 CardCmd.Upgrade(allCard);
         }
+        NCombatRoom.Instance?.PlaySplashVfx(target, Colors.Red);
     }
 }

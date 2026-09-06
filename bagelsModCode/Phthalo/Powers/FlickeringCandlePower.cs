@@ -6,11 +6,10 @@ using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
-using MegaCrit.Sts2.Core.Models;
 
 namespace bagelsMod.bagelsModCode.Phthalo.Powers;
 
-public class FlickeringCandlePower() : BagelsModPower
+public class FlickeringCandlePower : BagelsModPower
 {
     public override PowerType Type =>
         PowerType.Debuff;

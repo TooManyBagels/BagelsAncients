@@ -4,6 +4,7 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 
 namespace bagelsMod.bagelsModCode.Phthalo.Relics;
@@ -18,7 +19,7 @@ public class AxolotlTail : BagelsModRelic
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new HealVar(30)
+        new HealVar(25)
     ];
 
     private bool WasUsed
