@@ -1,6 +1,6 @@
 ﻿{
-  "BAGELSMOD-OPTION_DISSOLVE.title": "Dissolve",
-  "BAGELSMOD-OPTION_DISSOLVE.description": "Melt [gold]Preserved Vines[/gold] into [gold]Vines[/gold].",
-  "BAGELSMOD-OPTION_BOIL.title": "Boil",
-  "BAGELSMOD-OPTION_BOIL.description": "The effect of [gold]Boiling Kettle[/gold] lasts [blue]1[/blue] turn longer."
+  "OPTION_DISSOLVE.name": "Dissolve",
+  "OPTION_DISSOLVE.description": "Melt [gold]Preserved Vines[/gold] into [gold]Vines[/gold].",
+  "OPTION_BOIL.name": "Boil",
+  "OPTION_BOIL.description": "The effect of [gold]Boiling Kettle[/gold] lasts [blue]1[/blue] turn longer."
 }

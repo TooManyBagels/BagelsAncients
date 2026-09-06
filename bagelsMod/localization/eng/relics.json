@@ -9,7 +9,7 @@
   "BAGELSMOD-INKLET_SHAWL.description": "At the start of combat, gain [blue]1[/blue] [gold]Slippery[/gold]. If you have [gold]Slippery[/gold] at the start of your turn, gain {Energy:energyIcons()}.",
   "BAGELSMOD-INKLET_SHAWL.flavor": "Comfortable and fashionable, although wearers eventually find it consumes them.",
   "BAGELSMOD-PHANTASMAL_ARMOR.title": "Phantasmal Armor",
-  "BAGELSMOD-PHANTASMAL_ARMOR.description": "The first time you take unblocked damage each turn, gain [blue]{Block:diff()}[/blue] [gold]Block[/gold] and [blue]{BlurPower}[/blue] [gold]Blur[/gold].",
+  "BAGELSMOD-PHANTASMAL_ARMOR.description": "The first time you take unblocked attack damage each turn, gain [blue]{Block:diff()}[/blue] [gold]Block[/gold] and [blue]{BlurPower}[/blue] [gold]Blur[/gold].",
   "BAGELSMOD-PHANTASMAL_ARMOR.flavor": "Armor that wraps around the wearer at the first sign of danger.",
   "BAGELSMOD-BITING_BRACE.title": "Biting Brace",
   "BAGELSMOD-BITING_BRACE.description": "At the start of your turn, gain {Energy:energyIcons()}. Every [blue]{Hits}[/blue] times you take unblocked attack damage, lose [blue]{MaxHp:diff()}[/blue] Max HP.",
@@ -117,7 +117,7 @@
   "BAGELSMOD-PHOTOGRAPH.description": "Upon pickup, [gold]Enchant[/gold] up to [purple]{Cards:diff()}[/purple] cards with [gold]Copied[/gold].",
   "BAGELSMOD-PHOTOGRAPH.flavor": "LOOK AT THIS PHOTOGRAPH",
   "BAGELSMOD-SCRAPBOOK.title": "Scrapbook",
-  "BAGELSMOD-SCRAPBOOK.description": "At the end of your turn, [gold]Retain[/gold] the most expensive card and reduce its cost by {Energy:energyIcons()} until played.",
+  "BAGELSMOD-SCRAPBOOK.description": "At the end of your turn, [gold]Retain[/gold] the most expensive card in [gold]Hand[/gold] and reduce its cost by {Energy:energyIcons()} until played.",
   "BAGELSMOD-SCRAPBOOK.flavor": "Old memories, reorganized.",
   "BAGELSMOD-FAMILY_RECIPE.title": "Family Recipe",
   "BAGELSMOD-FAMILY_RECIPE.description": "[gold]Potions[/gold] are [gold]Replayed[/gold].",
@@ -127,5 +127,5 @@
   "BAGELSMOD-HEART_LOCKET.flavor": "Forever and ever and ever and ever...",
   "BAGELSMOD-FRIENDSHIP_BRACELET.title": "Friendship Bracelet",
   "BAGELSMOD-FRIENDSHIP_BRACELET.description": "Transform up to [blue]{Cards:diff()}[/blue] cards into cards of the same rarity and [gold]Upgrade[/gold] them.",
-  "BAGELSMOD-FRIENDSHIP_BRACELET.flavor": "A pattern with meaning only those closest to the creator can decipher."
+  "BAGELSMOD-FRIENDSHIP_BRACELET.flavor": "Adorned with a pattern only those closest to the creator can decipher the meaning of."
 }

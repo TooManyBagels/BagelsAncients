@@ -2,6 +2,7 @@
 using bagelsMod.bagelsModCode.Templates;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Combat;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Entities.RestSite;
@@ -10,7 +11,6 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Rooms;
-using MegaCrit.Sts2.Core.Saves.Runs;
 
 namespace bagelsMod.bagelsModCode.Phthalo.Relics;
 
@@ -23,8 +23,7 @@ public class BoilingKettle : BagelsModRelic
     private int _amount = 1;
 
     private int _turns;
-
-    [SavedProperty]
+    
     private int Amount
     {
         get => _amount;
@@ -62,21 +61,22 @@ public class BoilingKettle : BagelsModRelic
         HoverTipFactory.Static(StaticHoverTip.Energy)
     ];
 
-    public override Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
+    public override Task BeforeSideTurnEnd(PlayerChoiceContext choiceContext, CombatSide side, IEnumerable<Creature> participants)
     {
+        if (side is CombatSide.Player) return base.BeforeSideTurnEnd(choiceContext, side, participants);
         Turns++;
         if (Turns == Amount) Status = RelicStatus.Disabled;
-        return base.AfterPlayerTurnStart(choiceContext, player);
+        return base.BeforeSideTurnEnd(choiceContext, side, participants);
     }
 
     public override Decimal ModifyMaxEnergy(Player player, Decimal amount)
     {
-        return player != Owner || Turns > Amount - 1 ? amount : amount + DynamicVars.Energy.IntValue;
+        return player != Owner || Turns >= Amount ? amount : amount + DynamicVars.Energy.IntValue;
     }
 
     public override Decimal ModifyHandDraw(Player player, Decimal count)
     {
-        return player != Owner || Turns > Amount - 1 ? count : count + DynamicVars.Cards.IntValue;
+        return player != Owner || Turns >= Amount ? count : count + DynamicVars.Cards.IntValue;
     }
 
     public override Task AfterCombatEnd(CombatRoom room)

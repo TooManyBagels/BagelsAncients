@@ -18,7 +18,7 @@ public class AxolotlTail : BagelsModRelic
 
     protected override IEnumerable<DynamicVar> CanonicalVars =>
     [
-        new HealVar(25)
+        new HealVar(30)
     ];
 
     private bool WasUsed
