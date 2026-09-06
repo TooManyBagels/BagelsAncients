@@ -22,23 +22,16 @@ public class EncasingEmber : BagelsModRelic
     {
         List<CardModel> questList =
         [
-            ModelDb.Card<MysteriousSeed>(),
-            ModelDb.Card<PreservedVines>(),
-            ModelDb.Card<EndlessTrove>()
+            Owner.RunState.CreateCard<MysteriousSeed>(Owner),
+            Owner.RunState.CreateCard<PreservedVines>(Owner),
+            Owner.RunState.CreateCard<EndlessTrove>(Owner)
         ];
         
         var reward = await CardSelectCmd.FromChooseACardScreen(new BlockingPlayerChoiceContext(), questList, Owner);
-        switch (reward)
+        foreach (var c in questList)
         {
-            case MysteriousSeed: 
-                CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(Owner.RunState.CreateCard<MysteriousSeed>(Owner), Owner.Deck));
-                break;
-            case PreservedVines:
-                CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(Owner.RunState.CreateCard<PreservedVines>(Owner), Owner.Deck));
-                break;
-            case EndlessTrove:
-                CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(Owner.RunState.CreateCard<EndlessTrove>(Owner), Owner.Deck));
-                break;
+            if(c == reward) CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(c, Owner.Deck));
+            else Owner.RunState.CurrentMapPointHistoryEntry?.GetEntry(Owner.NetId).CardChoices.Add(new CardChoiceHistoryEntry(c, false));
         }
     }
 }

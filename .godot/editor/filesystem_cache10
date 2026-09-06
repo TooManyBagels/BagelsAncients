@@ -22,7 +22,7 @@ placeholder.jpg::CompressedTexture2D::665940404158571159::1786895527::1786896654
 power.png::CompressedTexture2D::1268500977835200770::1786244214::1786896654::1::::<><><>0<>0<>14955a6b5956734640bddf59eb3948c9<>res://.godot/imported/power.png-7cb355add4b79cabcf30e71f968af8d0.ctex::
 ::res://bagelsMod/images/powers/big/::1786896654
 power.png::CompressedTexture2D::5368649716816353641::1786244214::1786896654::1::::<><><>0<>0<>1df5bde0aefbd38ca47291c74dd8b27e<>res://.godot/imported/power.png-e518072afc1026c3134ee9f6b34db1d9.ctex::
-::res://bagelsMod/images/relics/::1788713959
+::res://bagelsMod/images/relics/::1788714367
 matryoshka_doll.png::CompressedTexture2D::8637331331277550047::1788713959::1788714367::0::::<><><>0<>0<>f6da977d7a57885dabc3ff6750187fc4<>::
 relic.png::CompressedTexture2D::6333641304652206222::1786244214::1786896654::1::::<><><>0<>0<>917ba4747deb23584905708acd9d94af<>res://.godot/imported/relic.png-a01aba97a0ab888796f68517f458195e.ctex::
 relic_outline.png::CompressedTexture2D::7161005380871207364::1786244214::1786896654::1::::<><><>0<>0<>f8442e3f1979a4fac9b1d2e3b0a876a2<>res://.godot/imported/relic_outline.png-45f818249b873959bf12abb118ed1cbf.ctex::
@@ -120,13 +120,13 @@ PreservedVines.cs::CSharpScript::8790251510185005124::1787410615::0::1::::<><><>
 Hive.cs::CSharpScript::1103633497438392628::1787410615::0::1::::<><><>0<>0<><>::
 ::res://bagelsModCode/Phthalo/Powers/::1788712413
 FlickeringCandlePower.cs::CSharpScript::4104291121511559543::1788712413::0::1::::<><><>0<>0<><>::
-::res://bagelsModCode/Phthalo/Relics/::1788714342
+::res://bagelsModCode/Phthalo/Relics/::1788721345
 AxolotlTail.cs::CSharpScript::5374377161005503006::1788655519::0::1::::<><><>0<>0<><>::
 BoilingKettle.cs::CSharpScript::7702330896078232902::1788653522::0::1::::<><><>0<>0<><>::
 BuzzingHive.cs::CSharpScript::9167963600246174562::1787410615::0::1::::<><><>0<>0<><>::
 CarvedSnake.cs::CSharpScript::4067711042918443095::1788313771::0::1::::<><><>0<>0<><>::
 DragonEgg.cs::CSharpScript::7995055594049454501::1787458984::0::1::::<><><>0<>0<><>::
-EncasingEmber.cs::CSharpScript::7356216153350439853::1788714342::0::1::::<><><>0<>0<><>::
+EncasingEmber.cs::CSharpScript::7356216153350439853::1788721345::0::1::::<><><>0<>0<><>::
 FlickeringCandle.cs::CSharpScript::2342603753902096127::1787458984::0::1::::<><><>0<>0<><>::
 HoneyPot.cs::CSharpScript::7512075788740933894::1787458984::0::1::::<><><>0<>0<><>::
 MysteriousFruit.cs::CSharpScript::1849266118223856891::1787410615::0::1::::<><><>0<>0<><>::
@@ -145,5 +145,5 @@ StringExtensions.cs::CSharpScript::7036523839108390279::1786894993::0::1::::<><>
 ::res://bin/::1786246171
 ::res://bin/ExportRelease/::1786246171
 ::res://bin/ExportRelease/net9.0/::1786246171
-::res://bin/ExportRelease/net9.0/publish/::1788714354
+::res://bin/ExportRelease/net9.0/publish/::1788721360
 bagelsMod.deps.json::JSON::-1::1788661304::0::1::::<><><>0<>0<><>::
